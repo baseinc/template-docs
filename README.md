@@ -85,8 +85,6 @@ BASE Templateは独自タグを使って編集します。独自タグには変�
 | {block:NotBlogPage} |  |
 | {block:LoadItemsPage} |  |
 | {block:NotLoadItemsPage} |  |
-| {block:IndexPageCategory} |  |
-| {block:NotIndexPageCategory} |  |
 
 ### if ショップ
 
@@ -179,8 +177,6 @@ BASE Templateは独自タグを使って編集します。独自タグには変�
 | {Counter} |  |
 | {MaxPageNumber} |  |
 | {NextPageNumber} |  |
-| {IndexPageCategory} |  |
-| {URLEncodedIndexPageCategory} |  |
 | {IllegalReportMessageTag} |  |
 | {ItemSelectTag} |  |
 | {EmbedWidgetTag} |  |
@@ -199,9 +195,7 @@ BASE Templateは独自タグを使って編集します。独自タグには変�
 | {ShopId} |  |
 | {ShopDomain} |  |
 | {ShopURL} |  |
-| {URLEncodedShopURL} |  |
 | {ShopName} |  |
-| {URLEncodedShopName} |  |
 | {ShopIntroduction} |  |
 | {ShopTwitterId} |  |
 | {ShopFacebookId} |  |
@@ -229,36 +223,12 @@ BASE Templateは独自タグを使って編集します。独自タグには変�
 | {ItemDetail} |  |
 | {ItemDetailNoBr} |  |
 | {ItemDigitalContent} |  |
-| {ItemImage1URL-origin} |  |
-| {ItemImage2URL-origin} |  |
-| {ItemImage3URL-origin} |  |
-| {ItemImage4URL-origin} |  |
-| {ItemImage5URL-origin} |  |
-| {ItemImage1URL-76} |  |
-| {ItemImage2URL-76} |  |
-| {ItemImage3URL-76} |  |
-| {ItemImage4URL-76} |  |
-| {ItemImage5URL-76} |  |
-| {ItemImage1URL-146} |  |
-| {ItemImage2URL-146} |  |
-| {ItemImage3URL-146} |  |
-| {ItemImage4URL-146} |  |
-| {ItemImage5URL-146} |  |
-| {ItemImage1URL-300} |  |
-| {ItemImage2URL-300} |  |
-| {ItemImage3URL-300} |  |
-| {ItemImage4URL-300} |  |
-| {ItemImage5URL-300} |  |
-| {ItemImage1URL-500} |  |
-| {ItemImage2URL-500} |  |
-| {ItemImage3URL-500} |  |
-| {ItemImage4URL-500} |  |
-| {ItemImage5URL-500} |  |
-| {ItemImage1URL-640} |  |
-| {ItemImage2URL-640} |  |
-| {ItemImage3URL-640} |  |
-| {ItemImage4URL-640} |  |
-| {ItemImage5URL-640} |  |
+| {ItemImage[1-5]URL-origin} |  |
+| {ItemImage[1-5]URL-76} |  |
+| {ItemImage[1-5]URL-146} |  |
+| {ItemImage[1-5]URL-300} |  |
+| {ItemImage[1-5]URL-500} |  |
+| {ItemImage[1-5]URL-640} |  |
 | {ItemNoImageURL} |  |
 
 ### Apps
