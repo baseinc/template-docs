@@ -1,10 +1,13 @@
 # BASE Templateドキュメント
+
 BASE Templateのドキュメントです。BASE Templateを使うにはHTML、CSS、JavaScriptの基本的な知識が必須です。事前に学習をお願いします。
 
 ## はじめに
-BASE Templateとは、BASEのショップのテンプレートを編集できる機能のことです。テンプレートを自由に編集して、自分のオリジナルのテーマを作ることができます。デザインオプションを独自に設定することもできます。
+
+BASE Templateとは、BASEのショップのテンプレートを編集できる機能のことです。テンプレートを自由に編集して、自分のオリジナルのテーマを作ることができます。また、デザインオプションを独自に設定することもできます。
 
 ## 利用開始
+
 1. テンプレート編集Appsをインストール。
 2. メニューのデザイン編集をクリック。
 3. HTMLを編集するをクリック。
@@ -40,6 +43,12 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 	</body>
 </html>
 ```
+
+## 注意事項
+
+- 外部ファイルを読み込みたい場合はレンタルサーバーなどを使ってください。
+- BASEのサーバー上の画像、CSS、JavaScriptファイルは予告なく変更されます。
+- 編集したテンプレートには最新のAppsが適用されません。
 
 ## テンプレート変数の説明
 
@@ -256,4 +265,113 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 
 ## デザインオプションの独自設定
 
+デザインオプションの独自設定をすることで、デザイン編集が簡単にできるようになります。独自設定はtext、image、color、select、ifの5種類があります。
+
+### text
+
+ヘッダーに特殊なmeta textタグを記述することで設定することができます。textの値があるかチェックするブロックも設定されます。
+
+*例)*
+
+```
+<html>
+	<head>
+		<meta name="text:Youtube Username" content="">
+	</head>
+	<body>
+		{block:text-Youtube_Username}
+		<div>Youtubeのアカウント {text:Youtube Username}</div>
+		{/block:text-Youtube_Username}
+		{block:not_text-Youtube_Username}
+		<div>Youtubeのアカウントはありません</div>
+		{/block:not_text-Youtube_Username}
+	</body>
+</html>
+```
+
+### image
+
+ヘッダーに特殊なmeta imageタグを記述することで設定することができます。imageの値があるかチェックするブロックも設定されます。値がない場合は1pxの透過の画像を返します。
+
+*例)*
+
+```
+<html>
+	<head>
+		<meta name="image:Header" content="http://thebase.in/img/header.jpg">
+		<meta name="image:Footer" content="">
+	</head>
+	<body>
+		<img src="{image:Header}">
+		<img src="{image:Footer}">
+	</body>
+</html>
+```
+
+### color
+
+ヘッダーに特殊なmeta colorタグを記述することで設定することができます。colorの値があるかチェックするブロックも設定されます。
+
+*例)*
+
+```
+<html>
+	<head>
+		<meta name="color:Contents Text" content="#ffffff">
+		<style type="text/css">
+			#contents {
+				color: {color:Contents Text}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="contents">
+			...
+		</div>
+	</body>
+</html>
+```
+
+### select
+
+ヘッダーに特殊なmeta selectタグを記述することで設定することができます。selectの値があるかチェックするブロックも設定されます。selectの一番上のcontentの値がデフォルト値になります。
+
+*例)*
+
+```
+<html>
+	<head>
+		<meta name="select:Layout" content="cool" title="Cool">
+		<meta name="select:Layout" content="cute" title="Cute">
+		<meta name="select:Layout" content="sharp" title="Sharp">
+	</head>
+	<body>
+		<div class="{select:Layout}">
+			...
+		</div>
+	</body>
+</html>
+```
+
+### if
+
+ヘッダーに特殊なmeta ifタグを記述することで設定することができます。
+
+*例)*
+
+```
+<html>
+	<head>
+		<meta name="if:Show Detail" content="1">
+	</head>
+	<body>
+		{block:if-Show_Detail}
+		<div>説明を表示します。</div>
+		{/block:if-Show_Detail}
+		{block:not_if-Show_Detail}
+		<div>説明を表示しません。</div>
+		{/block:not_if-Show_Detail}
+	</body>
+</html>
+```
 
