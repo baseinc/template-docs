@@ -233,11 +233,11 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {ItemDetailNoBr} | 商品の説明 (改行がbrタグになっていない) |
 | {ItemDigitalContent} | 商品のデジタルコンテンツのファイル名 (デジタルコンテンツAppsのインストールが必要) |
 | {ItemImage[1-5]URL-origin} | 商品画像のオリジナルサイズ `例) <img src="{ItemImage2URL-origin}">` |
-| {ItemImage[1-5]URL-76} | 商品画像の76pxサイズ。ない場合は近いサイズ。 |
-| {ItemImage[1-5]URL-146} | 商品画像の146pxサイズ。ない場合は近いサイズ。 |
-| {ItemImage[1-5]URL-300} | 商品画像の300pxサイズ。ない場合は近いサイズ。 |
-| {ItemImage[1-5]URL-500} | 商品画像の500pxサイズ。ない場合は近いサイズ。 |
-| {ItemImage[1-5]URL-640} | 商品画像の640pxサイズ。ない場合は近いサイズ。 |
+| {ItemImage[1-5]URL-76} | 商品画像の76pxサイズ。取得できなかった場合は近いサイズ。 |
+| {ItemImage[1-5]URL-146} | 商品画像の146pxサイズ。取得できなかった場合は近いサイズ。 |
+| {ItemImage[1-5]URL-300} | 商品画像の300pxサイズ。取得できなかった場合は近いサイズ。 |
+| {ItemImage[1-5]URL-500} | 商品画像の500pxサイズ。取得できなかった場合は近いサイズ。 |
+| {ItemImage[1-5]URL-640} | 商品画像の640pxサイズ。取得できなかった場合は近いサイズ。 |
 | {ItemNoImageURL} | no imageの画像 |
 
 ### Apps
