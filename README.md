@@ -44,6 +44,12 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 </html>
 ```
 
+## 禁止事項
+
+- {BASEMenuTag}を非表示にしないでください。改変もしないでください。
+- {FaviconTag}を非表示にしないでください。改変もしないでください。
+- 意図的にサーバーに負荷をかける編集はしないでください。
+
 ## 注意事項
 
 - 外部ファイルを読み込みたい場合はレンタルサーバーなどを使ってください。
@@ -174,21 +180,25 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | タグ名 | 説明 |
 |--------|------|
 | {PageTitle} | ページのタイトル |
-| {HeadLinkNextPrevTag} | クローラー向けの前のページ、次のページのリンクです。 `例) <head>... {block:IndexPage}{HeadLinkNextPrevTag}{/block:IndexPage} ...</head>` |
-| {MetaItemInfoTag} | 商品のメタ情報 `例) <head>... {block:ItemPage}{MetaItemInfoTag}{/block:ItemPage} ...</head>` |
-| {MetaShopInfoTag} | ショップのメタ情報 `例) <head>... {block:NotItemPage}{MetaShopInfoTag}{/block:NotItemPage} ...</head>` |
+| {FaviconTag} | *[必須]* ファビコンのタグ |
+| {JQueryTag} | *[必須]* JQueryライブラリのタグ |
+| {HeadLinkNextPrevTag} | クローラー向けの前のページ、次のページのリンクのタグ `例) <head>... {block:IndexPage}{HeadLinkNextPrevTag}{/block:IndexPage} ...</head>` |
+| {MetaItemInfoTag} | 商品のメタ情報のタグ `例) <head>... {block:ItemPage}{MetaItemInfoTag}{/block:ItemPage} ...</head>` |
+| {MetaShopInfoTag} | ショップのメタ情報のタグ `例) <head>... {block:NotItemPage}{MetaShopInfoTag}{/block:NotItemPage} ...</head>` |
 | {GoogleAnalyticsTag} | *[必須]* Google Analyticsのタグ。Google Analytics Appsで設定したタグがここに表示されます。自分で直接Google Analyticsタグを貼らないでください。 |
 
 ### テンプレート
 
 | タグ名 | 説明 |
 |--------|------|
+| {UpdateTime} | ファイルの更新時間 |
 | {Counter} | 表示されるごとに1から順に数字が表示される特殊な変数です |
 | {MaxPageNumber} | 最大ページ数。ページングのajaxで使用する。 |
 | {NextPageNumber} | 次のページ。ページングのajaxで使用する。 |
 | {IllegalReportMessageTag} | 「違反通報ありがとうございます」のメッセージ。セッションを使って表示しているのでthebase.inドメインのショップでしか表示されません。 |
 | {ItemSelectTag} | 商品ページのselectのタグ |
 | {EmbedWidgetTag} | 商品ページの外部サイトに貼るのタグ |
+| {BASEMenuTag} | *[必須]* BASEメニューのタグ |
 | {ContactContentsTag} | *[必須]* contactページのコンテンツのタグ |
 | {PrivacyContentsTag} | *[必須]* プライバシーポリシーページのコンテンツのタグ |
 | {LawContentsTag} | *[必須]* 特商法ページのコンテンツのタグ |
