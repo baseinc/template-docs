@@ -8,7 +8,7 @@ BASE Templateとは、BASEのショップのテンプレートを編集できる
 
 ## 利用開始
 
-1. テンプレート編集Appsをインストール。
+1. HTML編集Appをインストール。
 2. メニューのデザイン編集をクリック。
 3. HTMLを編集するをクリック。
 
@@ -205,6 +205,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {BlogContentsTag} | blogページのコンテンツのタグ |
 | {ItemAttentionTag} | *[必須]* 商品ページの注意文のタグ |
 | {IllegalReportTag} | *[必須]* 商品ページの通報するのタグ |
+| {AddToCartURL} | カートに入れるのURL。POSTのパラメーターが必要です。 |
 
 ### ショップ
 
