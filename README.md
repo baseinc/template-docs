@@ -169,9 +169,9 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {ItemPageURL} | 商品ページのURL |
 | {AboutPageURL} | aboutページのURL |
 | {BlogPageURL} | blogページのURL |
-| {ContactPageURL} | contactページのURL |
-| {PrivacyPageURL} | プライバシーポリシーページのURL |
-| {LawPageURL} | 特商法ページのURL |
+| {ContactPageURL} | *[必須]* contactページのURL |
+| {PrivacyPageURL} | *[必須]* プライバシーポリシーページのURL |
+| {LawPageURL} | *[必須]* 特商法ページのURL |
 | {LoadItemsPageURL} | 商品ロードページのURL。ページングのajaxで使用する。 `例) url: "{LoadItemsPageURL}" + next_page + "{LoadItemsPageURLParams}",` |
 | {LoadItemsPageURLParams} | 商品ロードページのURLのパラメーター。ページングのajaxで使用する。 `例) url: "{LoadItemsPageURL}" + next_page + "{LoadItemsPageURLParams}",` |
 
