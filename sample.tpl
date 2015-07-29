@@ -1,5 +1,4 @@
-
-ck:NotLoadItemsPage}
+{block:NotLoadItemsPage}
 <!DOCTYPE html>
 <head>
 <meta charset="utf-8">
@@ -341,9 +340,6 @@ li{
 {/block:ShopPublic}
 
 <!-- 全ページ必須 -->
-{PrivacyContentsTag}
-{LawContentsTag}
-
 {GoogleAnalyticsTag}
 </body>
 </html>
