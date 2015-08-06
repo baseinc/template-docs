@@ -100,6 +100,8 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {block:NotBlogPage} | blogページではない |
 | {block:LoadItemsPage} | 商品ロードページ |
 | {block:NotLoadItemsPage} | 商品ロードページではない |
+| {block:IndexPageCategory} | トップページのカテゴリーがある |
+| {block:NoIndexPageCategory} | トップページのカテゴリーがない |
 
 ### if ショップ
 
@@ -174,6 +176,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {LawPageURL} | *[必須]* 特商法ページのURL |
 | {LoadItemsPageURL} | 商品ロードページのURL。ページングのajaxで使用する。 `例) url: "{LoadItemsPageURL}" + next_page + "{LoadItemsPageURLParams}",` |
 | {LoadItemsPageURLParams} | 商品ロードページのURLのパラメーター。ページングのajaxで使用する。 `例) url: "{LoadItemsPageURL}" + next_page + "{LoadItemsPageURLParams}",` |
+| {IndexPageCategory} | トップページのカテゴリー。 `例) {block:IndexPageCategory}{IndexPageCategory}{/block:IndexPageCategory}` |
 
 ### HTMLヘッダー
 
