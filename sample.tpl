@@ -19,15 +19,15 @@
 
 {block:Hidden}
 <!-- デザイン設定 ここから -->
-<meta name="if:iconCircle" content="1"><!-- ロゴを丸くするか -->
-<meta name="color:mainColor" content="#fff"><!-- メインカラーの設定 -->
-<meta name="select:mainFont" content="YuGothic" title="YuGothic">
-<meta name="select:mainFont" content="AXIS Std" title="AXIS Std">
-<meta name="select:mainFont" content="Hiragino Kaku Gothic Pro" title="Hiragino Kaku Gothic Pro">
-<meta name="select:mainFont" content="Meiryo" title="Meiryo">
+<meta name="if:iconCircle" content="1" label="ロゴ角丸"><!-- ロゴを丸くするか -->
+<meta name="color:mainColor" content="#fff" label="メインカラー"><!-- メインカラーの設定 -->
+<meta name="select:mainFont" content="YuGothic" title="YuGothic" label="メインフォント">
+<meta name="select:mainFont" content="AXIS Std" title="AXIS Std" label="メインフォント">
+<meta name="select:mainFont" content="Hiragino Kaku Gothic Pro" title="Hiragino Kaku Gothic Pro" label="メインフォント">
+<meta name="select:mainFont" content="Meiryo" title="Meiryo" label="メインフォント">
 
-<meta name="text:sampleText" content="サンプルテキスト">
-<meta name="image:Piyo image" content="">
+<meta name="text:sampleText" content="サンプルテキストです" label="サンプルテキスト">
+<meta name="image:Piyo image" content="" label="ぴよ画像">
 <!-- デザイン設定 ここまで -->
 {/block:Hidden}
 

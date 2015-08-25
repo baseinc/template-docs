@@ -289,7 +289,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 ```
 <html>
 	<head>
-		<meta name="text:Youtube Username" content="">
+		<meta name="text:Youtube Username" content="" label="Youtubeのアカウント">
 	</head>
 	<body>
 		{block:text-Youtube_Username}
@@ -311,8 +311,8 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 ```
 <html>
 	<head>
-		<meta name="image:Header" content="http://thebase.in/img/header.jpg">
-		<meta name="image:Footer" content="">
+		<meta name="image:Header" content="http://thebase.in/img/header.jpg" label="ヘッダー画像">
+		<meta name="image:Footer" content="" label="フッター画像">
 	</head>
 	<body>
 		<img src="{image:Header}">
@@ -330,7 +330,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 ```
 <html>
 	<head>
-		<meta name="color:Contents Text" content="#ffffff">
+		<meta name="color:Contents Text" content="#ffffff" label="コンテンツテキスト色">
 		<style type="text/css">
 			#contents {
 				color: {color:Contents Text}
@@ -354,9 +354,9 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 ```
 <html>
 	<head>
-		<meta name="select:Layout" content="cool" title="Cool">
-		<meta name="select:Layout" content="cute" title="Cute">
-		<meta name="select:Layout" content="sharp" title="Sharp">
+		<meta name="select:Layout" content="cool" title="Cool" label="レイアウトタイプ">
+		<meta name="select:Layout" content="cute" title="Cute" label="レイアウトタイプ">
+		<meta name="select:Layout" content="sharp" title="Sharp" label="レイアウトタイプ">
 	</head>
 	<body>
 		<div class="{select:Layout}">
@@ -375,7 +375,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 ```
 <html>
 	<head>
-		<meta name="if:Show Detail" content="1">
+		<meta name="if:Show Detail" content="1" label="説明を表示">
 	</head>
 	<body>
 		{block:if-Show_Detail}
