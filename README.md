@@ -90,14 +90,14 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {block:ContactPage} | contactページ |
 | {block:PrivacyPage} | プライバシーポリシーページ |
 | {block:LawPage} | 特商法ページ |
-| {block:BlogPage} | blogページ |
+| {block:BlogPage} | blogページ (Apps) |
 | {block:NotIndexPage} | トップページではない |
 | {block:NotItemPage} | 商品ページではない |
 | {block:NotAboutPage} | aboutページではない |
 | {block:NotContactPage} | contactページではない |
 | {block:NotPrivacyPage} | プライバシーポリシーページではない |
 | {block:NotLawPage} | 特商法ページではない |
-| {block:NotBlogPage} | blogページではない |
+| {block:NotBlogPage} | blogページではない (Apps) |
 | {block:LoadItemsPage} | 商品ロードページ |
 | {block:NotLoadItemsPage} | 商品ロードページではない |
 | {block:IndexPageCategory} | トップページのカテゴリーがある |
@@ -170,7 +170,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {IndexPageURL} | トップページのURL |
 | {ItemPageURL} | 商品ページのURL |
 | {AboutPageURL} | aboutページのURL |
-| {BlogPageURL} | blogページのURL |
+| {BlogPageURL} | blogページのURL (Apps) |
 | {ContactPageURL} | *[必須]* contactページのURL |
 | {PrivacyPageURL} | *[必須]* プライバシーポリシーページのURL |
 | {LawPageURL} | *[必須]* 特商法ページのURL |
@@ -205,7 +205,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {ContactContentsTag} | *[必須]* contactページのコンテンツのタグ |
 | {PrivacyContentsTag} | *[必須]* プライバシーポリシーページのコンテンツのタグ |
 | {LawContentsTag} | *[必須]* 特商法ページのコンテンツのタグ |
-| {BlogContentsTag} | blogページのコンテンツのタグ |
+| {BlogContentsTag} | blogページのコンテンツのタグ (Apps) |
 | {ItemAttentionTag} | *[必須]* 商品ページの注意文のタグ |
 | {IllegalReportTag} | *[必須]* 商品ページの通報するのタグ |
 | {AddToCartURL} | カートに入れるのURL。POSTのパラメーターが必要です。 |
