@@ -245,7 +245,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {ItemDetail} | 商品の説明 (改行がbrタグになっている) |
 | {ItemDetailNoBr} | 商品の説明 (改行がbrタグになっていない) |
 | {ItemDigitalContent} | 商品のデジタルコンテンツのファイル名 (デジタルコンテンツAppsのインストールが必要) |
-| {ItemImage[1-5]URL-origin} | 商品画像のオリジナルサイズ `例) <img src="{ItemImage2URL-origin}">` |
+| {ItemImage[1-5]URL-origin} | 商品画像のオリジナルサイズ。商品ページのみ使用可。 `例) <img src="{ItemImage2URL-origin}">` |
 | {ItemImage[1-5]URL-76} | 商品画像の76pxサイズ。取得できなかった場合は近いサイズ。 |
 | {ItemImage[1-5]URL-146} | 商品画像の146pxサイズ。取得できなかった場合は近いサイズ。 |
 | {ItemImage[1-5]URL-300} | 商品画像の300pxサイズ。取得できなかった場合は近いサイズ。 |
