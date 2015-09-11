@@ -239,7 +239,7 @@ li{
                         <div class="item">
                             <a href="{ItemPageURL}" class="cover cover--absolute"></a>
                             {block:ItemImage1}
-                            <img class="item__image" src="{ItemImage1URL-origin}">
+                            <img class="item__image" src="{ItemImage1URL-640}">
                             {/block:ItemImage1}
                             {block:NoItemImage1}
                             <img class="item__image" src="{ItemNoImageURL}">
