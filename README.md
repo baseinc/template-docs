@@ -160,6 +160,8 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {block:AppsI18n} | 海外対応Appsをインストールしている |
 | {block:AppsDownload} | デジタルコンテンツAppsをインストールしている |
 | {block:AppsItemLabel} | ラベルAppsをインストールしている |
+| {block:AppsBaseEraser} | BASEロゴ非表示Appsをインストールしている |
+| {block:NoAppsBaseEraser} | BASEロゴ非表示Appsをインストールしていない |
 
 ### BASE
 
