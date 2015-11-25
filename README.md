@@ -208,7 +208,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {IllegalReportMessageTag} | 「違反通報ありがとうございます」のメッセージ。セッションを使って表示しているのでthebase.inドメインのショップでしか表示されません。 |
 | {ItemSelectTag} | 商品ページのselectのタグ |
 | {EmbedWidgetTag} | 商品ページの外部サイトに貼るのタグ |
-| {BASEMenuTag} | *[必須]* BASEメニューのタグ。BASEロゴ非表示Appsをインストールしている場合、BASEのロゴが非表示になります。 |
+| {BASEMenuTag} | *[必須]* BASEメニューのタグ。BASEロゴ非表示Appsをインストールしている場合、BASEのロゴが非表示になります (Apps) |
 | {ContactContentsTag} | *[必須]* contactページのコンテンツのタグ |
 | {PrivacyContentsTag} | *[必須]* プライバシーポリシーページのコンテンツのタグ |
 | {LawContentsTag} | *[必須]* 特商法ページのコンテンツのタグ |
