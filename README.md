@@ -230,6 +230,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {ShopFacebookId} | ショップのFacebook ID |
 | {ShopAmebaId} | ショップのAmeba ID |
 | {ShopInstagramId} | ショップのInstagram ID |
+| {ShopDeepLink} | ショップのディープリンク。アプリがない場合はウェブへリダイレクト。 |
 
 ### デザインオプション
 
@@ -259,6 +260,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {ItemImage[1-5]URL-500} | 商品画像の500pxサイズ。取得できなかった場合は近いサイズ。2~5は商品ページのみ使用可。 |
 | {ItemImage[1-5]URL-640} | 商品画像の640pxサイズ。取得できなかった場合は近いサイズ。2~5は商品ページのみ使用可。 |
 | {ItemNoImageURL} | no imageの画像 |
+| {ItemDeepLink} | 商品のディープリンク。アプリがない場合はウェブへリダイレクト。 |
 
 ### Apps
 
@@ -282,6 +284,13 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {lang:NotShopPublicMessage} | [ショップ名]は、現在準備中です。 |
 | {lang:SeeDetails} | 詳細を見る |
 | {lang:Tweet} | ツイート |
+
+### ソーシャル
+
+| タグ名 | 説明 |
+|--------|------|
+| {TwitterDataHashtags} | Twitterのハッシュタグ。BASEec。BASEロゴ非表示Appsをインストールしている時は空文字。 |
+| {TwitterDataVia} | Twitterのvia。ショップのTwitter ID。ショップのTwitter IDを設定していない時はBASEec。BASEロゴ非表示Appsをインストールしている時は空文字。 |
 
 ## デザインオプションの独自設定
 
