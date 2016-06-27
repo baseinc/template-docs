@@ -114,6 +114,8 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {block:NotLoadItemsPage} | 商品ロードページではない |
 | {block:IndexPageCategory} | トップページのカテゴリーがある |
 | {block:NoIndexPageCategory} | トップページのカテゴリーがない |
+| {block:IndexPageSearch} | トップページの検索キーワードがある |
+| {block:NoIndexPageSearch} | トップページの検索キーワードがない |
 
 ### if ショップ
 
@@ -169,6 +171,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {block:AppsItemLabel} | ラベルAppsをインストールしている |
 | {block:AppsBaseEraser} | BASEロゴ非表示Appsをインストールしている |
 | {block:NoAppsBaseEraser} | BASEロゴ非表示Appsをインストールしていない |
+| {block:AppsSearch} | 商品検索Appsをインストールしている |
 
 ### BASE
 
@@ -191,6 +194,8 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {LoadItemsPageURL} | 商品ロードページのURL。ページングのajaxで使用する。 `例) url: "{LoadItemsPageURL}" + next_page + "{LoadItemsPageURLParams}",` |
 | {LoadItemsPageURLParams} | 商品ロードページのURLのパラメーター。ページングのajaxで使用する。 `例) url: "{LoadItemsPageURL}" + next_page + "{LoadItemsPageURLParams}",` |
 | {IndexPageCategory} | トップページのカテゴリー。 `例) {block:IndexPageCategory}{IndexPageCategory}{/block:IndexPageCategory}` |
+| {IndexPageSearch} | 検索キーワード |
+| {SearchPageURL} | 検索フォームのURL。 GETパラメータ q=***(検索キーワード) が必要です。|
 
 ### HTMLヘッダー
 
@@ -291,6 +296,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {lang:NotShopPublicMessage} | [ショップ名]は、現在準備中です。 |
 | {lang:SeeDetails} | 詳細を見る |
 | {lang:Tweet} | ツイート |
+| {lang:ItemSearchResult} | "[検索キーワード]"の検索結果 |
 
 ### ソーシャル
 
