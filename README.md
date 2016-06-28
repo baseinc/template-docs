@@ -423,7 +423,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 Appsごとに対応方法の詳細は以下の各ページをご確認ください。
 
 - [検索App](apps/search.md)
-- [カテゴリ管理App](apps/itemcategory.md)
+
 
 
 
