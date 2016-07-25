@@ -423,7 +423,8 @@ Appsごとの対応方法の詳細は以下の各ページをご確認くださ�
 
 - [商品検索App](apps/search.md)
 
+## お問い合わせ
 
+developers[at]thebase.in
 
-
-
+BASE Developers [https://developers.thebase.in](https://developers.thebase.in)
