@@ -282,7 +282,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {AppsI18nTag} | 言語切替のタグ (海外対応Appsのインストールが必要) |
 | {AppsItemLabelTag} | 商品ラベルのタグ (ラベルAppsのインストールが必要) |
 | {AppsItemCategoryCategoryName} | 商品カテゴリーの名前 (カテゴリーAppsのインストールが必要) `例) {block:AppsItemCategoryCategories}{AppsItemCategoryCategoryName}{/block:AppsItemCategoryCategories}` |
-| {AppsItemCategoryCategoryCount} | 商品カテゴリーの商品数 (カテゴリーAppsのインストールが必要) `例) {block:AppsItemCategoryCategories}{AppsItemCategoryCategoryName} ({AppsItemCategoryCategoryCount}){/block:AppsItemCategoryCategories}` |
+| {AppsItemCategoryCategoryCount} | *[非推奨]* この変数は使えなくなる予定です。商品カテゴリーの商品数 (カテゴリーAppsのインストールが必要) `例) {block:AppsItemCategoryCategories}{AppsItemCategoryCategoryName} ({AppsItemCategoryCategoryCount}){/block:AppsItemCategoryCategories}` |
 | {AppsItemCategoryCategoryPageURL} | 商品カテゴリーのページのURL (カテゴリーAppsのインストールが必要) `例) {block:AppsItemCategoryCategories}<a href="{AppsItemCategoryCategoryPageURL}">{AppsItemCategoryCategoryName}</a>{/block:AppsItemCategoryCategories}` |
 
 ### ローカライズテキスト
