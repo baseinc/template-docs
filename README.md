@@ -194,8 +194,8 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {LoadItemsPageURL} | 商品ロードページのURL。ページングのajaxで使用する。 `例) url: "{LoadItemsPageURL}" + next_page + "{LoadItemsPageURLParams}",` |
 | {LoadItemsPageURLParams} | 商品ロードページのURLのパラメーター。ページングのajaxで使用する。 `例) url: "{LoadItemsPageURL}" + next_page + "{LoadItemsPageURLParams}",` |
 | {IndexPageCategory} | トップページのカテゴリー。 `例) {block:IndexPageCategory}{IndexPageCategory}{/block:IndexPageCategory}` |
-| {IndexPageSearch} | 検索キーワード |
 | {SearchPageURL} | 検索フォームのURL。 GETパラメータ q=***(検索キーワード) が必要です。|
+| {IndexPageSearch} | 検索キーワード |
 
 ### HTMLヘッダー
 
