@@ -237,6 +237,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {ShopDomain} | ショップのドメイン `例) shop.thebase.in` |
 | {ShopURL} | ショップのURL `例) http://shop.thebase.in` |
 | {ShopName} | ショップの名前 |
+| {ShopIntroduction-origin} | ショップの説明のプレーンテキスト |
 | {ShopIntroduction} | ショップの説明 |
 | {ShopTwitterId} | ショップのTwitter ID |
 | {ShopFacebookId} | ショップのFacebook ID |
@@ -262,6 +263,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {ItemTitle} | 商品の名前 |
 | {ItemPrice} | 商品の価格 |
 | {ItemStock} | 商品の在庫数 |
+| {ItemDetail-origin} | 商品の説明のプレーンテキスト (改行がbrタグになっている) |
 | {ItemDetail} | 商品の説明 (改行がbrタグになっている) |
 | {ItemDetailNoBr} | 商品の説明 (改行がbrタグになっていない) |
 | {ItemDigitalContent} | 商品のデジタルコンテンツのファイル名 (デジタルコンテンツAppsのインストールが必要) |
