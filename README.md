@@ -75,7 +75,9 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | タグ名 | 説明 |
 |--------|------|
 | {block:Items} | 商品のループ |
-| {block:AppsItemCategoryCategories} | 商品カテゴリーのループ (カテゴリーAppsのインストールが必要) |
+| {block:AppsItemCategoryCategories} | 大カテゴリーのループ (カテゴリーAppsのインストールが必要) |
+| {block:AppsItemCategoryMediumCategories} | 大カテゴリーのループの中の中カテゴリーのループ (カテゴリーAppsのインストールが必要) |
+| {block:AppsItemCategoryChildCategories} | 今いるカテゴリーの子カテゴリーのループ (カテゴリーAppsのインストールが必要) |
 
 ### if 非表示
 
@@ -116,6 +118,10 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {block:NoIndexPageCategory} | トップページのカテゴリーがない |
 | {block:IndexPageSearch} | トップページの検索キーワードがある |
 | {block:NoIndexPageSearch} | トップページの検索キーワードがない |
+
+### if テンプレート
+| タグ名 | 説明 |
+| {block:BreadcrumbTag} | パンくずがある |
 
 ### if ショップ
 
@@ -165,6 +171,8 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | タグ名 | 説明 |
 |--------|------|
 | {block:AppsItemCategory} | カテゴリーAppsをインストールしている |
+| {block:HasAppsItemCategoryMediumCategories} | 中カテゴリーがある |
+| {block:HasAppsItemCategoryChildCategories} | 子カテゴリーがある |
 | {block:AppsBlog} | Blog Appsをインストールしている |
 | {block:AppsI18n} | 海外対応Appsをインストールしている |
 | {block:AppsDownload} | デジタルコンテンツAppsをインストールしている |
@@ -228,6 +236,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {ItemAttentionTag} | *[必須]* 商品ページの注意文のタグ |
 | {IllegalReportTag} | *[必須]* 商品ページの通報するのタグ |
 | {AddToCartURL} | カートに入れるのURL。POSTのパラメーターが必要です。 |
+| {BreadcrumbTag} | パンくずタグ |
 
 ### ショップ
 
@@ -280,12 +289,17 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 
 | タグ名 | 説明 |
 |--------|------|
-| {AppsItemCategoryTag} | 商品カテゴリーのタグ (カテゴリーAppsのインストールが必要) |
+| {AppsItemCategoryTag} | *[非推奨]* カテゴリーのタグ。大カテゴリーだけ表示される。 (カテゴリーAppsのインストールが必要) |
+| {AppsItemCategoryCategoriesTag} | カテゴリーのタグ。大カテゴリーと中カテゴリーが表示される。 (カテゴリーAppsのインストールが必要) |
 | {AppsI18nTag} | 言語切替のタグ (海外対応Appsのインストールが必要) |
 | {AppsItemLabelTag} | 商品ラベルのタグ (ラベルAppsのインストールが必要) |
-| {AppsItemCategoryCategoryName} | 商品カテゴリーの名前 (カテゴリーAppsのインストールが必要) `例) {block:AppsItemCategoryCategories}{AppsItemCategoryCategoryName}{/block:AppsItemCategoryCategories}` |
-| {AppsItemCategoryCategoryCount} | *[非推奨]* この変数は使えなくなる予定です。商品カテゴリーの商品数 (カテゴリーAppsのインストールが必要) `例) {block:AppsItemCategoryCategories}{AppsItemCategoryCategoryName} ({AppsItemCategoryCategoryCount}){/block:AppsItemCategoryCategories}` |
-| {AppsItemCategoryCategoryPageURL} | 商品カテゴリーのページのURL (カテゴリーAppsのインストールが必要) `例) {block:AppsItemCategoryCategories}<a href="{AppsItemCategoryCategoryPageURL}">{AppsItemCategoryCategoryName}</a>{/block:AppsItemCategoryCategories}` |
+| {AppsItemCategoryCategoryName} | カテゴリーの名前 (カテゴリーAppsのインストールが必要) `例) {block:AppsItemCategoryCategories}{AppsItemCategoryCategoryName}{/block:AppsItemCategoryCategories}` |
+| {AppsItemCategoryCategoryCount} | *[非推奨]* カテゴリーの商品数 (カテゴリーAppsのインストールが必要) `例) {block:AppsItemCategoryCategories}{AppsItemCategoryCategoryName} ({AppsItemCategoryCategoryCount}){/block:AppsItemCategoryCategories}` |
+| {AppsItemCategoryCategoryPageURL} | カテゴリーのページのURL (カテゴリーAppsのインストールが必要) `例) {block:AppsItemCategoryCategories}<a href="{AppsItemCategoryCategoryPageURL}">{AppsItemCategoryCategoryName}</a>{/block:AppsItemCategoryCategories}` |
+| {AppsItemCategoryMediumCategoryName} | 中カテゴリーの名前 (カテゴリーAppsのインストールが必要) |
+| {AppsItemCategoryMediumCategoryPageURL} | 中カテゴリーのページのURL (カテゴリーAppsのインストールが必要) |
+| {AppsItemCategoryChildCategoryName} | 子カテゴリーの名前 (カテゴリーAppsのインストールが必要) |
+| {AppsItemCategoryChildCategoryPageURL} | 子カテゴリーのページのURL (カテゴリーAppsのインストールが必要) |
 
 ### ローカライズテキスト
 
