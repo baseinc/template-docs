@@ -72,8 +72,8 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 
 ### ループ
 
-| タグ名 | 説明 |
-|--------|------|
+| 変数 | 説明 |
+|-----|-----|
 | {block:Items} | 商品のループ |
 | {block:AppsItemCategoryCategories} | 大カテゴリーのループ (カテゴリーAppsのインストールが必要) |
 | {block:AppsItemCategoryMediumCategories} | 大カテゴリーのループの中の中カテゴリーのループ (カテゴリーAppsのインストールが必要) |
@@ -81,14 +81,14 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 
 ### if 非表示
 
-| タグ名 | 説明 |
-|--------|------|
+| 変数 | 説明 |
+|-----|-----|
 | {block:Hidden} | このブロックで囲むと何も表示されない。デザインオプションのmetaタグはこれで囲む。 |
 
 ### if イテレータ
 
-| タグ名 | 説明 |
-|--------|------|
+| 変数 | 説明 |
+|-----|-----|
 | {block:Item[1-24]} | 商品が何番目のループ `例) {block:Item2}2番目{/block:Item2}` |
 | {block:NotItem[1-24]} | 商品が何番目のループではない `例) {block:NotItem3}3番目ではない{/block:NotItem3}` |
 | {block:Odd} | 商品が奇数番目のループ |
@@ -96,8 +96,8 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 
 ### if ページ
 
-| タグ名 | 説明 |
-|--------|------|
+| 変数 | 説明 |
+|-----|-----|
 | {block:IndexPage} | トップページ |
 | {block:ItemPage} | 商品ページ |
 | {block:AboutPage} | aboutページ |
@@ -120,13 +120,14 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {block:NoIndexPageSearch} | トップページの検索キーワードがない |
 
 ### if テンプレート
-| タグ名 | 説明 |
+| 変数 | 説明 |
+|-----|-----|
 | {block:BreadcrumbTag} | パンくずがある |
 
 ### if ショップ
 
-| タグ名 | 説明 |
-|--------|------|
+| 変数 | 説明 |
+|-----|-----|
 | {block:ShopTwitterId} | Twitter IDがある |
 | {block:ShopFacebookId} | Facebook IDがある |
 | {block:ShopAmebaId} | Ameba IDがある |
@@ -140,16 +141,16 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 
 ### if デザインオプション
 
-| タグ名 | 説明 |
-|--------|------|
+| 変数 | 説明 |
+|-----|-----|
 | {block:NavColor} | ナビゲーションカラーが設定されている |
 | {block:TextColor} | テキストカラーが設定されている |
 | {block:LinkColor} | リンクカラーが設定されている |
 
 ### if 商品
 
-| タグ名 | 説明 |
-|--------|------|
+| 変数 | 説明 |
+|-----|-----|
 | {block:HasItems} | 商品がある |
 | {block:NoItems} | 商品がない |
 | {block:HasItemStock} | 商品の在庫がある |
@@ -168,8 +169,8 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 
 ### if Apps
 
-| タグ名 | 説明 |
-|--------|------|
+| 変数 | 説明 |
+|-----|-----|
 | {block:AppsItemCategory} | カテゴリーAppsをインストールしている |
 | {block:HasAppsItemCategoryMediumCategories} | 中カテゴリーがある |
 | {block:HasAppsItemCategoryChildCategories} | 子カテゴリーがある |
@@ -183,15 +184,15 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 
 ### BASE
 
-| タグ名 | 説明 |
-|--------|------|
+| 変数 | 説明 |
+|-----|-----|
 | {BASEURL} | BASEのURL `https://thebase.in` |
 | {BASEDomain} | BASEのドメイン `thebase.in` |
 
 ### ページ
 
-| タグ名 | 説明 |
-|--------|------|
+| 変数 | 説明 |
+|-----|-----|
 | {IndexPageURL} | トップページのURL |
 | {ItemPageURL} | 商品ページのURL |
 | {AboutPageURL} | aboutページのURL |
@@ -207,8 +208,8 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 
 ### HTMLヘッダー
 
-| タグ名 | 説明 |
-|--------|------|
+| 変数 | 説明 |
+|-----|-----|
 | {PageTitle} | ページのタイトル |
 | {FaviconTag} | *[必須]* ファビコンのタグ |
 | {JQueryTag} | *[必須]* JQueryライブラリのタグ |
@@ -219,8 +220,8 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 
 ### テンプレート
 
-| タグ名 | 説明 |
-|--------|------|
+| 変数 | 説明 |
+|-----|-----|
 | {UpdateTime} | ファイルの更新時間 |
 | {Counter} | 表示されるごとに1から順に数字が表示される特殊な変数です |
 | {MaxPageNumber} | 最大ページ数。ページングのajaxで使用する。 |
@@ -240,8 +241,8 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 
 ### ショップ
 
-| タグ名 | 説明 |
-|--------|------|
+| 変数 | 説明 |
+|-----|-----|
 | {ShopId} | ショップのID |
 | {ShopDomain} | ショップのドメイン `例) shop.thebase.in` |
 | {ShopURL} | ショップのURL `例) http://shop.thebase.in` |
@@ -256,8 +257,8 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 
 ### デザインオプション
 
-| タグ名 | 説明 |
-|--------|------|
+| 変数 | 説明 |
+|-----|-----|
 | {NavColor} | ナビゲーションのカラー |
 | {TextColor} | テキストのカラー |
 | {LinkColor} | リンクのカラー |
@@ -266,8 +267,8 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 
 ### 商品
 
-| タグ名 | 説明 |
-|--------|------|
+| 変数 | 説明 |
+|-----|-----|
 | {ItemId} | 商品のID |
 | {ItemTitle} | 商品の名前 |
 | {ItemPrice} | 商品の価格 |
@@ -287,8 +288,8 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 
 ### Apps
 
-| タグ名 | 説明 |
-|--------|------|
+| 変数 | 説明 |
+|-----|-----|
 | {AppsItemCategoryTag} | *[非推奨]* カテゴリーのタグ。大カテゴリーだけ表示される。 (カテゴリーAppsのインストールが必要) |
 | {AppsItemCategoryCategoriesTag} | カテゴリーのタグ。大カテゴリーと中カテゴリーが表示される。 (カテゴリーAppsのインストールが必要) |
 | {AppsI18nTag} | 言語切替のタグ (海外対応Appsのインストールが必要) |
@@ -303,8 +304,8 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 
 ### ローカライズテキスト
 
-| タグ名 | 説明 |
-|--------|------|
+| 変数 | 説明 |
+|-----|-----|
 | {lang:Privacy} | プライバシーポリシー |
 | {lang:Law} | 特定商取引法に基づく表記 |
 | {lang:AddToCart} | カートに入れる |
@@ -316,8 +317,8 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 
 ### ソーシャル
 
-| タグ名 | 説明 |
-|--------|------|
+| 変数 | 説明 |
+|-----|-----|
 | {TwitterDataHashtags} | Twitterのハッシュタグ。BASEec。BASEロゴ非表示Appsをインストールしている時は空文字。 |
 | {TwitterDataVia} | Twitterのvia。ショップのTwitter ID。ショップのTwitter IDを設定していない時はBASEec。BASEロゴ非表示Appsをインストールしている時は空文字。 |
 
