@@ -237,7 +237,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {ItemAttentionTag} | *[必須]* 商品ページの注意文のタグ |
 | {IllegalReportTag} | *[必須]* 商品ページの通報するのタグ |
 | {AddToCartURL} | カートに入れるのURL。POSTのパラメーターが必要です。 |
-| {BreadcrumbTag} | パンくずタグ |
+| {BreadcrumbTag} | パンくずタグ。カテゴリーのページで表示される。 |
 
 ### ショップ
 
