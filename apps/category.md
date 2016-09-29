@@ -170,7 +170,7 @@ BASEでは、グローバルナビゲーションでは第二階層（中カテ�
 	<li class="breadcrumb__child"><a href="{HOMEへのリンク}" class="breadcrumb__link">Home</a></li>
 	<li class="breadcrumb__child"><a href="{カテゴリ「トップス」ページへのリンク}" class="breadcrumb__link">トップス</a></li>	
 	<li class="breadcrumb__child"><a href="{カテゴリ「Tシャツ」ページへのリンク}" class="breadcrumb__link">Tシャツ</a></li>	
-	<li class="breadcrumb__child"><a href="{カテゴリ「Vネック」ページへのリンク}" class="breadcrumb__link">Vネック</a></li>	
+	<li class="breadcrumb__child"><span class="breadcrumb__notlink">Vネック</span></a></li>	
 </ul>
 
 ```
