@@ -212,6 +212,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 |-----|-----|
 | {PageTitle} | ページのタイトル |
 | {FaviconTag} | *[必須]* ファビコンのタグ |
+| {CanonicalTag} | canonical属性のタグ |
 | {JQueryTag} | *[必須]* JQueryライブラリのタグ |
 | {HeadLinkNextPrevTag} | クローラー向けの前のページ、次のページのリンクのタグ `例) <head>... {block:IndexPage}{HeadLinkNextPrevTag}{/block:IndexPage} ...</head>` |
 | {MetaItemInfoTag} | 商品のメタ情報のタグ `例) <head>... {block:ItemPage}{MetaItemInfoTag}{/block:ItemPage} ...</head>` |
