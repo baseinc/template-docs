@@ -438,7 +438,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 
 Appsごとの対応方法の詳細は以下の各ページをご確認ください。
 
-- [カテゴリ管理App](apps/category.md)
+- [カテゴリ管理App](apps/item_category.md)
 - [商品検索App](apps/search.md)
 
 ## お問い合わせ
