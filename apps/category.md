@@ -123,9 +123,11 @@ BASEでは、グローバルナビゲーションでは第二階層（中カテ�
 {block:AppsItemCategory}
 {block:IndexPageCategory}
 
+	<!-- カテゴリ名をページの見出しとして表示 -->
 	<h2 class="categoryTitle01">{IndexPageCategory}</h2>
 	
 	{block:HasAppsItemCategoryChildCategories}
+		<!-- 子カテゴリの一覧を表示 -->
 		<ul>
 			{block:AppsItemCategoryChildCategories}
 				<li><a href="{AppsItemCategoryChildCategoryPageURL}">{AppsItemCategoryChildCategoryName}</a></li>
