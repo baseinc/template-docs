@@ -21,32 +21,37 @@
 
 ### if ページ
 
-| タグ名 | 説明 |
-|--------|------|
+| 変数 | 説明 |
+|-----|-----|
 | {block:IndexPageCategory} | トップページのカテゴリがある |
 | {block:NoIndexPageCategory} | トップページのカテゴリがない |
 
+### if テンプレート
+| 変数 | 説明 |
+|-----|-----|
+| {block:BreadcrumbTag} | パンくずがある |
+
 ### if Apps
 
-| タグ名 | 説明 |
-|--------|------|
+| 変数 | 説明 |
+|-----|-----|
 | {block:AppsItemCategory} | カテゴリAppsをインストールしている |
 
 ### ページ
 
-| タグ名 | 説明 |
-|--------|------|
+| 変数 | 説明 |
+|-----|-----|
 | {IndexPageCategory} | トップページのカテゴリ。 `例) {block:IndexPageCategory}{IndexPageCategory}{/block:IndexPageCategory}` |
 
 ### テンプレート
 
-| タグ名 | 説明 |
-|--------|------|
-| {BreadcrumbTag} | パンくずタグ。カテゴリのページで表示される。 |
+| 変数 | 説明 |
+|-----|-----|
+| {BreadcrumbTag} | パンくずタグ。カテゴリのページでのみ表示される。 `例)Home > メンズファッション > トップス > Tシャツ` |
 
 ### Apps
-| タグ名 | 説明 |
-|--------|------|
+| 変数 | 説明 |
+|-----|-----|
 | {AppsItemCategoryTag} | *[非推奨]* カテゴリのタグ。大カテゴリだけ表示される。 (カテゴリAppsのインストールが必要) |
 | {AppsItemCategoryCategoriesTag} | カテゴリのタグ。大カテゴリと中カテゴリが表示される。 (カテゴリAppsのインストールが必要) |
 | {AppsItemCategoryCategoryName} | カテゴリの名前 (カテゴリAppsのインストールが必要) `例) {block:AppsItemCategoryCategories}{AppsItemCategoryCategoryName}{/block:AppsItemCategoryCategories}` |
