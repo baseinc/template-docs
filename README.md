@@ -447,3 +447,5 @@ Appsごとの対応方法の詳細は以下の各ページをご確認くださ�
 developers[at]thebase.in
 
 BASE Developers [https://developers.thebase.in](https://developers.thebase.in)
+
+Facebookグループ [https://www.facebook.com/groups/415137698681164/](https://www.facebook.com/groups/415137698681164/)
