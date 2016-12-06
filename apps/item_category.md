@@ -19,6 +19,14 @@
 
 ## 関連するテンプレート変数
 
+### ループ
+
+| 変数 | 説明 |
+|-----|-----|
+| {block:AppsItemCategoryCategories} | 大カテゴリーのループ (カテゴリーAppsのインストールが必要) |
+| {block:AppsItemCategoryMediumCategories} | 大カテゴリーのループの中の中カテゴリーのループ (カテゴリーAppsのインストールが必要) |
+| {block:AppsItemCategoryChildCategories} | 今いるカテゴリーの子カテゴリーのループ (カテゴリーAppsのインストールが必要) |
+
 ### if ページ
 
 | 変数 | 説明 |
