@@ -310,6 +310,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {lang:Privacy} | プライバシーポリシー |
 | {lang:Law} | 特定商取引法に基づく表記 |
 | {lang:AddToCart} | カートに入れる |
+| {lang:NoItemInquiry} | 再入荷についてお問い合わせをする |
 | {lang:NoItemsMessage} | 出品されている商品がありません。 |
 | {lang:NotShopPublicMessage} | [ショップ名]は、現在準備中です。 |
 | {lang:SeeDetails} | 詳細を見る |
