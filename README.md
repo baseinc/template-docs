@@ -182,6 +182,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {block:AppsBaseEraser} | BASEロゴ非表示Appsをインストールしている |
 | {block:NoAppsBaseEraser} | BASEロゴ非表示Appsをインストールしていない |
 | {block:AppsSearch} | 商品検索Appsをインストールしている |
+| {block:AppsReview} | レビューAppsをインストールしている |
 
 ### BASE
 
@@ -204,7 +205,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {LoadItemsPageURL} | 商品ロードページのURL。ページングのajaxで使用する。 `例) url: "{LoadItemsPageURL}" + next_page + "{LoadItemsPageURLParams}",` |
 | {LoadItemsPageURLParams} | 商品ロードページのURLのパラメーター。ページングのajaxで使用する。 `例) url: "{LoadItemsPageURL}" + next_page + "{LoadItemsPageURLParams}",` |
 | {IndexPageCategory} | トップページのカテゴリー。 `例) {block:IndexPageCategory}{IndexPageCategory}{/block:IndexPageCategory}` |
-| {SearchPageURL} | 検索フォームのURL。 GETパラメータ q=***(検索キーワード) が必要です。|
+| {SearchPageURL} | 検索フォームのURL。 GETパラメータ q=\*\*\*(検索キーワード) が必要です。|
 | {IndexPageSearch} | 検索キーワード |
 
 ### HTMLヘッダー
@@ -303,6 +304,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {AppsItemCategoryMediumCategoryPageURL} | 中カテゴリーのページのURL (カテゴリーAppsのインストールが必要) |
 | {AppsItemCategoryChildCategoryName} | 子カテゴリーの名前 (カテゴリーAppsのインストールが必要) |
 | {AppsItemCategoryChildCategoryPageURL} | 子カテゴリーのページのURL (カテゴリーAppsのインストールが必要) |
+| {AppsReviewTag} | レビューのタグ。商品ページでのみ表示される。 (レビューAppsのインストールが必要) |
 
 ### ローカライズテキスト
 
