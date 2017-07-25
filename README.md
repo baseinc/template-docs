@@ -157,16 +157,8 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {block:HasItemStock} | 商品の在庫がある |
 | {block:NoItemStock} | 商品の在庫がない |
 | {block:ItemDigitalContent} | デジタルコンテンツの商品 (デジタルコンテンツAppsのインストールが必要) |
-| {block:ItemImage1} | 商品画像1がある |
-| {block:ItemImage2} | 商品画像2がある |
-| {block:ItemImage3} | 商品画像3がある |
-| {block:ItemImage4} | 商品画像4がある |
-| {block:ItemImage5} | 商品画像5がある |
-| {block:NoItemImage1} | 商品画像1がない |
-| {block:NoItemImage2} | 商品画像2がない |
-| {block:NoItemImage3} | 商品画像3がない |
-| {block:NoItemImage4} | 商品画像4がない |
-| {block:NoItemImage5} | 商品画像5がない |
+| {block:ItemImage[1-20]} | 商品画像がある。 `例) {block:ItemImage2}画像2がある{/block:ItemImage2}` |
+| {block:NoItemImage[1-20]} | 商品画像がない。 `例) {block:NotItemImage2}画像2がない{/block:NotItemImage2}` |
 
 ### if Apps
 
@@ -280,12 +272,12 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {ItemDetail} | 商品の説明 (特殊文字はHTML エンティティに変換される。改行はbrタグに変換される。特定の条件をみたす場合、http://,https://から始まる文字列がリンクに変換される) |
 | {ItemDetailNoBr} | 商品の説明 (特殊文字はHTML エンティティに変換される。改行はbrタグに変換されない) |
 | {ItemDigitalContent} | 商品のデジタルコンテンツのファイル名 (デジタルコンテンツAppsのインストールが必要) |
-| {ItemImage[1-5]URL-origin} | 商品画像のオリジナルサイズ。商品ページのみ使用可。 `例) <img src="{ItemImage2URL-origin}">` |
-| {ItemImage[1-5]URL-76} | 商品画像の76pxサイズ。取得できなかった場合は近いサイズ。2~5は商品ページのみ使用可。 |
-| {ItemImage[1-5]URL-146} | 商品画像の146pxサイズ。取得できなかった場合は近いサイズ。2~5は商品ページのみ使用可。 |
-| {ItemImage[1-5]URL-300} | 商品画像の300pxサイズ。取得できなかった場合は近いサイズ。2~5は商品ページのみ使用可。 |
-| {ItemImage[1-5]URL-500} | 商品画像の500pxサイズ。取得できなかった場合は近いサイズ。2~5は商品ページのみ使用可。 |
-| {ItemImage[1-5]URL-640} | 商品画像の640pxサイズ。取得できなかった場合は近いサイズ。2~5は商品ページのみ使用可。 |
+| {ItemImage[1-20]URL-origin} | 商品画像のオリジナルサイズ。商品ページのみ使用可。 `例) <img src="{ItemImage2URL-origin}">` |
+| {ItemImage[1-20]URL-76} | 商品画像の76pxサイズ。取得できなかった場合はオリジンサイズ。2~20は商品ページのみ使用可。 |
+| {ItemImage[1-20]URL-146} | 商品画像の146pxサイズ。取得できなかった場合はオリジンサイズ。2~20は商品ページのみ使用可。 |
+| {ItemImage[1-20]URL-300} | 商品画像の300pxサイズ。取得できなかった場合はオリジンサイズ。2~20は商品ページのみ使用可。 |
+| {ItemImage[1-20]URL-500} | 商品画像の500pxサイズ。取得できなかった場合はオリジンサイズ。2~20は商品ページのみ使用可。 |
+| {ItemImage[1-20]URL-640} | 商品画像の640pxサイズ。取得できなかった場合はオリジンサイズ。2~20は商品ページのみ使用可。 |
 | {ItemNoImageURL} | no imageの画像 |
 | {ItemDeepLink} | 商品のディープリンク。アプリがない場合はウェブへリダイレクト。 |
 
