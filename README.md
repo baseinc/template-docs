@@ -1,6 +1,6 @@
 # BASE Templateドキュメント
 
-BASE Templateのドキュメントです。BASE Templateを使うにはHTML、CSS、JavaScriptの基本的な知識が必須です。事前に学習をお願いします。
+BASE Templateのドキュメントです。BASE Templateを使うにはHTML、CSS、JavaScriptの基本的な知識が必須です。事前に学習をお願いします。このリポジトリをwatchしておくと更新情報が届いて便利です。
 
 ## 更新情報
 
@@ -442,6 +442,7 @@ Appsごとの対応方法の詳細は以下の各ページをご確認くださ�
 
 - [カテゴリ管理App](apps/item_category.md)
 - [商品検索App](apps/search.md)
+- [レビューApp](apps/review.md)
 
 ## お問い合わせ
 
