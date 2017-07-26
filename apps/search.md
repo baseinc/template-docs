@@ -16,7 +16,7 @@
 
 | 変数 | 説明 |
 |-----|-----|
-| {block:AppsSearch} | 商品検索Appsをインストールしている |
+| {block:AppsSearch} | 商品検索Appをインストールしている |
 
 ### ページ
 

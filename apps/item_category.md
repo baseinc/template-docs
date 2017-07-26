@@ -23,9 +23,9 @@
 
 | 変数 | 説明 |
 |-----|-----|
-| {block:AppsItemCategoryCategories} | 大カテゴリーのループ (カテゴリーAppsのインストールが必要) |
-| {block:AppsItemCategoryMediumCategories} | 大カテゴリーのループの中の中カテゴリーのループ (カテゴリーAppsのインストールが必要) |
-| {block:AppsItemCategoryChildCategories} | 今いるカテゴリーの子カテゴリーのループ (カテゴリーAppsのインストールが必要) |
+| {block:AppsItemCategoryCategories} | 大カテゴリーのループ (カテゴリーAppのインストールが必要) |
+| {block:AppsItemCategoryMediumCategories} | 大カテゴリーのループの中の中カテゴリーのループ (カテゴリーAppのインストールが必要) |
+| {block:AppsItemCategoryChildCategories} | 今いるカテゴリーの子カテゴリーのループ (カテゴリーAppのインストールが必要) |
 
 ### if ページ
 
@@ -43,7 +43,7 @@
 
 | 変数 | 説明 |
 |-----|-----|
-| {block:AppsItemCategory} | カテゴリAppsをインストールしている |
+| {block:AppsItemCategory} | カテゴリAppをインストールしている |
 
 ### ページ
 
@@ -60,15 +60,15 @@
 ### Apps
 | 変数 | 説明 |
 |-----|-----|
-| {AppsItemCategoryTag} | *[非推奨]* カテゴリのタグ。大カテゴリだけ表示される。 (カテゴリAppsのインストールが必要) |
-| {AppsItemCategoryCategoriesTag} | カテゴリのタグ。大カテゴリと中カテゴリが表示される。 (カテゴリAppsのインストールが必要) |
-| {AppsItemCategoryCategoryName} | カテゴリの名前 (カテゴリAppsのインストールが必要) `例) {block:AppsItemCategoryCategories}{AppsItemCategoryCategoryName}{/block:AppsItemCategoryCategories}` |
-| {AppsItemCategoryCategoryCount} | *[非推奨]* カテゴリの商品数 (カテゴリAppsのインストールが必要) `例) {block:AppsItemCategoryCategories}{AppsItemCategoryCategoryName} ({AppsItemCategoryCategoryCount}){/block:AppsItemCategoryCategories}` |
-| {AppsItemCategoryCategoryPageURL} | カテゴリのページのURL (カテゴリAppsのインストールが必要) `例) {block:AppsItemCategoryCategories}<a href="{AppsItemCategoryCategoryPageURL}">{AppsItemCategoryCategoryName}</a>{/block:AppsItemCategoryCategories}` |
-| {AppsItemCategoryMediumCategoryName} | 中カテゴリの名前 (カテゴリAppsのインストールが必要) |
-| {AppsItemCategoryMediumCategoryPageURL} | 中カテゴリのページのURL (カテゴリAppsのインストールが必要) |
-| {AppsItemCategoryChildCategoryName} | 子カテゴリの名前 (カテゴリAppsのインストールが必要) |
-| {AppsItemCategoryChildCategoryPageURL} | 子カテゴリのページのURL (カテゴリAppsのインストールが必要) |
+| {AppsItemCategoryTag} | *[非推奨]* カテゴリのタグ。大カテゴリだけ表示される。 (カテゴリAppのインストールが必要) |
+| {AppsItemCategoryCategoriesTag} | カテゴリのタグ。大カテゴリと中カテゴリが表示される。 (カテゴリAppのインストールが必要) |
+| {AppsItemCategoryCategoryName} | カテゴリの名前 (カテゴリAppのインストールが必要) `例) {block:AppsItemCategoryCategories}{AppsItemCategoryCategoryName}{/block:AppsItemCategoryCategories}` |
+| {AppsItemCategoryCategoryCount} | *[非推奨]* カテゴリの商品数 (カテゴリAppのインストールが必要) `例) {block:AppsItemCategoryCategories}{AppsItemCategoryCategoryName} ({AppsItemCategoryCategoryCount}){/block:AppsItemCategoryCategories}` |
+| {AppsItemCategoryCategoryPageURL} | カテゴリのページのURL (カテゴリAppのインストールが必要) `例) {block:AppsItemCategoryCategories}<a href="{AppsItemCategoryCategoryPageURL}">{AppsItemCategoryCategoryName}</a>{/block:AppsItemCategoryCategories}` |
+| {AppsItemCategoryMediumCategoryName} | 中カテゴリの名前 (カテゴリAppのインストールが必要) |
+| {AppsItemCategoryMediumCategoryPageURL} | 中カテゴリのページのURL (カテゴリAppのインストールが必要) |
+| {AppsItemCategoryChildCategoryName} | 子カテゴリの名前 (カテゴリAppのインストールが必要) |
+| {AppsItemCategoryChildCategoryPageURL} | 子カテゴリのページのURL (カテゴリAppのインストールが必要) |
 
 
 ## グローバルナビゲーションのカテゴリ
