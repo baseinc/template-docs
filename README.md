@@ -76,9 +76,9 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | 変数 | 説明 |
 |-----|-----|
 | {block:Items} | 商品のループ |
-| {block:AppsItemCategoryCategories} | 大カテゴリーのループ (カテゴリーAppsのインストールが必要) |
-| {block:AppsItemCategoryMediumCategories} | 大カテゴリーのループの中の中カテゴリーのループ (カテゴリーAppsのインストールが必要) |
-| {block:AppsItemCategoryChildCategories} | 今いるカテゴリーの子カテゴリーのループ (カテゴリーAppsのインストールが必要) |
+| {block:AppsItemCategoryCategories} | 大カテゴリーのループ (カテゴリーAppのインストールが必要) |
+| {block:AppsItemCategoryMediumCategories} | 大カテゴリーのループの中の中カテゴリーのループ (カテゴリーAppのインストールが必要) |
+| {block:AppsItemCategoryChildCategories} | 今いるカテゴリーの子カテゴリーのループ (カテゴリーAppのインストールが必要) |
 
 ### if 非表示
 
@@ -156,7 +156,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {block:NoItems} | 商品がない |
 | {block:HasItemStock} | 商品の在庫がある |
 | {block:NoItemStock} | 商品の在庫がない |
-| {block:ItemDigitalContent} | デジタルコンテンツの商品 (デジタルコンテンツAppsのインストールが必要) |
+| {block:ItemDigitalContent} | デジタルコンテンツの商品 (デジタルコンテンツAppのインストールが必要) |
 | {block:ItemImage[1-20]} | 商品画像がある。 `例) {block:ItemImage2}画像2がある{/block:ItemImage2}` |
 | {block:NoItemImage[1-20]} | 商品画像がない。 `例) {block:NotItemImage2}画像2がない{/block:NotItemImage2}` |
 
@@ -164,17 +164,17 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 
 | 変数 | 説明 |
 |-----|-----|
-| {block:AppsItemCategory} | カテゴリーAppsをインストールしている |
+| {block:AppsItemCategory} | カテゴリーAppをインストールしている |
 | {block:HasAppsItemCategoryMediumCategories} | 中カテゴリーがある |
 | {block:HasAppsItemCategoryChildCategories} | 子カテゴリーがある |
-| {block:AppsBlog} | Blog Appsをインストールしている |
-| {block:AppsI18n} | 海外対応Appsをインストールしている |
-| {block:AppsDownload} | デジタルコンテンツAppsをインストールしている |
-| {block:AppsItemLabel} | ラベルAppsをインストールしている |
-| {block:AppsBaseEraser} | BASEロゴ非表示Appsをインストールしている |
-| {block:NoAppsBaseEraser} | BASEロゴ非表示Appsをインストールしていない |
-| {block:AppsSearch} | 商品検索Appsをインストールしている |
-| {block:AppsReview} | レビューAppsをインストールしている |
+| {block:AppsBlog} | Blog Appをインストールしている |
+| {block:AppsI18n} | 海外対応Appをインストールしている |
+| {block:AppsDownload} | デジタルコンテンツAppをインストールしている |
+| {block:AppsItemLabel} | ラベルAppをインストールしている |
+| {block:AppsBaseEraser} | BASEロゴ非表示Appをインストールしている |
+| {block:NoAppsBaseEraser} | BASEロゴ非表示Appをインストールしていない |
+| {block:AppsSearch} | 商品検索Appをインストールしている |
+| {block:AppsReview} | レビューAppをインストールしている |
 
 ### BASE
 
@@ -224,7 +224,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {IllegalReportMessageTag} | 「違反通報ありがとうございます」のメッセージ。セッションを使って表示しているのでthebase.inドメインのショップでしか表示されません。 |
 | {ItemSelectTag} | 商品ページのselectのタグ |
 | {EmbedWidgetTag} | 商品ページの外部サイトに貼るのタグ |
-| {BASEMenuTag} | *[必須]* BASEメニューのタグ。BASEロゴ非表示Appsをインストールしている場合、BASEのロゴが非表示になります (Apps) |
+| {BASEMenuTag} | *[必須]* BASEメニューのタグ。BASEロゴ非表示Appをインストールしている場合、BASEのロゴが非表示になります (Apps) |
 | {ContactContentsTag} | *[必須]* contactページのコンテンツのタグ |
 | {PrivacyContentsTag} | *[必須]* プライバシーポリシーページのコンテンツのタグ |
 | {LawContentsTag} | *[必須]* 特商法ページのコンテンツのタグ |
@@ -271,7 +271,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {ItemDetail-origin} | 商品の説明のプレーンテキスト (特殊文字はHTML エンティティに変換される。改行はbrタグに変換される) |
 | {ItemDetail} | 商品の説明 (特殊文字はHTML エンティティに変換される。改行はbrタグに変換される。特定の条件をみたす場合、http://,https://から始まる文字列がリンクに変換される) |
 | {ItemDetailNoBr} | 商品の説明 (特殊文字はHTML エンティティに変換される。改行はbrタグに変換されない) |
-| {ItemDigitalContent} | 商品のデジタルコンテンツのファイル名 (デジタルコンテンツAppsのインストールが必要) |
+| {ItemDigitalContent} | 商品のデジタルコンテンツのファイル名 (デジタルコンテンツAppのインストールが必要) |
 | {ItemImage[1-20]URL-origin} | 商品画像のオリジナルサイズ。商品ページのみ使用可。 `例) <img src="{ItemImage2URL-origin}">` |
 | {ItemImage[1-20]URL-76} | 商品画像の76pxサイズ。取得できなかった場合はオリジンサイズ。2~20は商品ページのみ使用可。 |
 | {ItemImage[1-20]URL-146} | 商品画像の146pxサイズ。取得できなかった場合はオリジンサイズ。2~20は商品ページのみ使用可。 |
@@ -285,18 +285,18 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 
 | 変数 | 説明 |
 |-----|-----|
-| {AppsItemCategoryTag} | *[非推奨]* カテゴリーのタグ。大カテゴリーだけ表示される。 (カテゴリーAppsのインストールが必要) |
-| {AppsItemCategoryCategoriesTag} | カテゴリーのタグ。大カテゴリーと中カテゴリーが表示される。 (カテゴリーAppsのインストールが必要) |
-| {AppsI18nTag} | 言語切替のタグ (海外対応Appsのインストールが必要) |
-| {AppsItemLabelTag} | 商品ラベルのタグ (ラベルAppsのインストールが必要) |
-| {AppsItemCategoryCategoryName} | カテゴリーの名前 (カテゴリーAppsのインストールが必要) `例) {block:AppsItemCategoryCategories}{AppsItemCategoryCategoryName}{/block:AppsItemCategoryCategories}` |
-| {AppsItemCategoryCategoryCount} | *[非推奨]* カテゴリーの商品数 (カテゴリーAppsのインストールが必要) `例) {block:AppsItemCategoryCategories}{AppsItemCategoryCategoryName} ({AppsItemCategoryCategoryCount}){/block:AppsItemCategoryCategories}` |
-| {AppsItemCategoryCategoryPageURL} | カテゴリーのページのURL (カテゴリーAppsのインストールが必要) `例) {block:AppsItemCategoryCategories}<a href="{AppsItemCategoryCategoryPageURL}">{AppsItemCategoryCategoryName}</a>{/block:AppsItemCategoryCategories}` |
-| {AppsItemCategoryMediumCategoryName} | 中カテゴリーの名前 (カテゴリーAppsのインストールが必要) |
-| {AppsItemCategoryMediumCategoryPageURL} | 中カテゴリーのページのURL (カテゴリーAppsのインストールが必要) |
-| {AppsItemCategoryChildCategoryName} | 子カテゴリーの名前 (カテゴリーAppsのインストールが必要) |
-| {AppsItemCategoryChildCategoryPageURL} | 子カテゴリーのページのURL (カテゴリーAppsのインストールが必要) |
-| {AppsReviewTag} | レビューのタグ。商品ページでのみ表示される。 (レビューAppsのインストールが必要) |
+| {AppsItemCategoryTag} | *[非推奨]* カテゴリーのタグ。大カテゴリーだけ表示される。 (カテゴリーAppのインストールが必要) |
+| {AppsItemCategoryCategoriesTag} | カテゴリーのタグ。大カテゴリーと中カテゴリーが表示される。 (カテゴリーAppのインストールが必要) |
+| {AppsI18nTag} | 言語切替のタグ (海外対応Appのインストールが必要) |
+| {AppsItemLabelTag} | 商品ラベルのタグ (ラベルAppのインストールが必要) |
+| {AppsItemCategoryCategoryName} | カテゴリーの名前 (カテゴリーAppのインストールが必要) `例) {block:AppsItemCategoryCategories}{AppsItemCategoryCategoryName}{/block:AppsItemCategoryCategories}` |
+| {AppsItemCategoryCategoryCount} | *[非推奨]* カテゴリーの商品数 (カテゴリーAppのインストールが必要) `例) {block:AppsItemCategoryCategories}{AppsItemCategoryCategoryName} ({AppsItemCategoryCategoryCount}){/block:AppsItemCategoryCategories}` |
+| {AppsItemCategoryCategoryPageURL} | カテゴリーのページのURL (カテゴリーAppのインストールが必要) `例) {block:AppsItemCategoryCategories}<a href="{AppsItemCategoryCategoryPageURL}">{AppsItemCategoryCategoryName}</a>{/block:AppsItemCategoryCategories}` |
+| {AppsItemCategoryMediumCategoryName} | 中カテゴリーの名前 (カテゴリーAppのインストールが必要) |
+| {AppsItemCategoryMediumCategoryPageURL} | 中カテゴリーのページのURL (カテゴリーAppのインストールが必要) |
+| {AppsItemCategoryChildCategoryName} | 子カテゴリーの名前 (カテゴリーAppのインストールが必要) |
+| {AppsItemCategoryChildCategoryPageURL} | 子カテゴリーのページのURL (カテゴリーAppのインストールが必要) |
+| {AppsReviewTag} | レビューのタグ。商品ページでのみ表示される。 (レビューAppのインストールが必要) |
 
 ### ローカライズテキスト
 
@@ -316,8 +316,8 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 
 | 変数 | 説明 |
 |-----|-----|
-| {TwitterDataHashtags} | Twitterのハッシュタグ。BASEec。BASEロゴ非表示Appsをインストールしている時は空文字。 |
-| {TwitterDataVia} | Twitterのvia。ショップのTwitter ID。ショップのTwitter IDを設定していない時はBASEec。BASEロゴ非表示Appsをインストールしている時は空文字。 |
+| {TwitterDataHashtags} | Twitterのハッシュタグ。BASEec。BASEロゴ非表示Appをインストールしている時は空文字。 |
+| {TwitterDataVia} | Twitterのvia。ショップのTwitter ID。ショップのTwitter IDを設定していない時はBASEec。BASEロゴ非表示Appをインストールしている時は空文字。 |
 
 ## デザインオプションの独自設定
 
