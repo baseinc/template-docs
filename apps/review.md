@@ -23,9 +23,9 @@
 *例)*
 
 ```
-{block:AppsSearch}
+{block:AppsReview}
 {AppsReviewTag}
-{/block:AppsSearch}
+{/block:AppsReview}
 ```
 
 ## 動作のチェック
