@@ -57,7 +57,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 
 ## 注意事項
 
-- 外部ファイルを読み込みたい場合は[BASE Developers](https://developers.thebase.in/)のファイルアップローダーを使ってください。
+- 外部ファイルを読み込みたい場合は[BASE Developers](https://developers.thebase.in/)のサイト内にあるファイルアップローダーを使ってください。
 - BASEのサーバー上の画像、CSS、JavaScriptファイルは予告なく変更されます。
 - 編集したテンプレートには最新のAppsが適用されません。
 - 弊社が不適切と認めたテーマもしくはソースコードは予告なく削除することがあります。
@@ -248,7 +248,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {ShopURL} | ショップのURL `例) http://shop.thebase.in` |
 | {ShopName} | ショップの名前 |
 | {ShopIntroduction-origin} | ショップの説明のプレーンテキスト (特殊文字はHTML エンティティに変換される。改行はbrタグに変換される。) |
-| {ShopIntroduction} | ショップの説明 (特殊文字はHTML エンティティに変換される。改行はbrタグに変換される。特定の条件をみたす場合、http://,https://から始まる文字列がリンクに変換される) |
+| {ShopIntroduction} | ショップの説明 (特殊文字はHTML エンティティに変換される。改行はbrタグに変換される。特定の条件をみたす場合、http:// か https:// から始まる文字列がリンクに変換される) |
 | {ShopTwitterId} | ショップのTwitter ID |
 | {ShopFacebookId} | ショップのFacebook ID |
 | {ShopAmebaId} | ショップのAmeba ID |
@@ -274,7 +274,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {ItemPrice} | 商品の価格 |
 | {ItemStock} | 商品の在庫数 |
 | {ItemDetail-origin} | 商品の説明のプレーンテキスト (特殊文字はHTML エンティティに変換される。改行はbrタグに変換される) |
-| {ItemDetail} | 商品の説明 (特殊文字はHTML エンティティに変換される。改行はbrタグに変換される。特定の条件をみたす場合、http://,https://から始まる文字列がリンクに変換される) |
+| {ItemDetail} | 商品の説明 (特殊文字はHTML エンティティに変換される。改行はbrタグに変換される。特定の条件をみたす場合、http:// か https:// から始まる文字列がリンクに変換される) |
 | {ItemDetailNoBr} | 商品の説明 (特殊文字はHTML エンティティに変換される。改行はbrタグに変換されない) |
 | {ItemDigitalContent} | 商品のデジタルコンテンツのファイル名 (デジタルコンテンツAppのインストールが必要) |
 | {ItemImage[1-20]URL-origin} | 商品画像のオリジナルサイズ。商品ページのみ使用可。 `例) <img src="{ItemImage2URL-origin}">` |
