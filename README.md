@@ -4,7 +4,8 @@ BASE Templateのドキュメントです。BASE Templateを使うにはHTML、CS
 
 ## 更新情報
 
-- 2017/07/25 画像20枚対応の変数を追加しました。(まだ画像登録はできませんが変数は使えます)
+- 2017/09/20 セールAppの変数を追加しました。
+- 2017/07/25 画像20枚対応の変数を追加しました。
 - 2017/07/18 レビューAppの変数を追加しました。
 
 ## はじめに
@@ -159,6 +160,8 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 |-----|-----|
 | {block:HasItems} | 商品がある |
 | {block:NoItems} | 商品がない |
+| {block:HasItemProperPrice} | 通常価格がある |
+| {block:NoItemProperPrice} | 通常価格がない |
 | {block:HasItemStock} | 商品の在庫がある |
 | {block:NoItemStock} | 商品の在庫がない |
 | {block:ItemDigitalContent} | デジタルコンテンツの商品 (デジタルコンテンツAppのインストールが必要) |
@@ -180,6 +183,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {block:NoAppsBaseEraser} | BASEロゴ非表示Appをインストールしていない |
 | {block:AppsSearch} | 商品検索Appをインストールしている |
 | {block:AppsReview} | レビューAppをインストールしている |
+| {block:AppsSale} | セールAppをインストールしている |
 
 ### BASE
 
@@ -272,6 +276,8 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {ItemId} | 商品のID |
 | {ItemTitle} | 商品の名前 |
 | {ItemPrice} | 商品の価格 |
+| {ItemProperPrice} | 商品の通常価格(セール中の商品のみ設定される) |
+| {ItemDiscountRate} | 商品の割引率(セール中の商品のみ設定される) |
 | {ItemStock} | 商品の在庫数 |
 | {ItemDetail-origin} | 商品の説明のプレーンテキスト (特殊文字はHTML エンティティに変換される。改行はbrタグに変換される) |
 | {ItemDetail} | 商品の説明 (特殊文字はHTML エンティティに変換される。改行はbrタグに変換される。特定の条件をみたす場合、http:// か https:// から始まる文字列がリンクに変換される) |
@@ -444,6 +450,7 @@ Appsごとの対応方法の詳細は以下の各ページをご確認くださ�
 - [カテゴリ管理App](apps/item_category.md)
 - [商品検索App](apps/search.md)
 - [レビューApp](apps/review.md)
+- [セールApp](apps/sale.md)
 
 ## お問い合わせ
 
