@@ -35,8 +35,8 @@
 <div>{ItemPrice}</div>
 {/block:NoItemProperPrice}
 {block:HasItemProperPrice}
-<div>割引率:{ItemDiscountRate}</div>
-<div>通常価格:{ItemProperPrice}</div>
+<div>{ItemDiscountRate}</div>
+<div>{ItemProperPrice}</div>
 <div>{ItemPrice}</div>
 {/block:HasItemProperPrice}
 ```
