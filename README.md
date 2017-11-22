@@ -4,6 +4,7 @@ BASE Templateのドキュメントです。BASE Templateを使うにはHTML、CS
 
 ## 更新情報
 
+- 2017/11/22 ブログ固定記事の変数を追加しました。
 - 2017/10/27 ブログ記事ページもプレビューできるようにしました。
 - 2017/10/18 ブログRSSの変数を追加しました。
 - 2017/09/20 セールAppの変数を追加しました。
@@ -178,6 +179,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {block:HasAppsItemCategoryMediumCategories} | 中カテゴリーがある |
 | {block:HasAppsItemCategoryChildCategories} | 子カテゴリーがある |
 | {block:AppsBlog} | Blog Appをインストールしている |
+| {block:AppsBlogArticleIsPinned} | ブログ固定記事がある |
 | {block:AppsI18n} | 海外対応Appをインストールしている |
 | {block:AppsDownload} | デジタルコンテンツAppをインストールしている |
 | {block:AppsItemLabel} | ラベルAppをインストールしている |
@@ -300,6 +302,8 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 
 | 変数 | 説明 |
 |-----|-----|
+| {AppsBlogArticleTitle} | ブログ記事のタイトル |
+| {AppsBlogArticlePageURL} | ブログ記事ページのURL |
 | {AppsItemCategoryTag} | *[非推奨]* カテゴリーのタグ。大カテゴリーだけ表示される。 (カテゴリーAppのインストールが必要) |
 | {AppsItemCategoryCategoriesTag} | カテゴリーのタグ。大カテゴリーと中カテゴリーが表示される。 (カテゴリーAppのインストールが必要) |
 | {AppsI18nTag} | 言語切替のタグ (海外対応Appのインストールが必要) |
