@@ -4,6 +4,7 @@ BASE Templateのドキュメントです。BASE Templateを使うにはHTML、CS
 
 ## 更新情報
 
+- 2018/02/15 関連商品の変数を追加しました。
 - 2017/11/22 ブログ固定記事の変数を追加しました。
 - 2017/10/27 ブログ記事ページもプレビューできるようにしました。
 - 2017/10/18 ブログRSSの変数を追加しました。
@@ -205,7 +206,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {ItemPageURL} | 商品ページのURL |
 | {AboutPageURL} | aboutページのURL |
 | {BlogPageURL} | blogページのURL (Apps) |
-| {BlogFeedPageURL} | blogのRSSページのURL (Apps) |
+| {BlogFeedPageURL} | blogのRSSページのURL。独自拡張のimageが画像URL (Apps) |
 | {ContactPageURL} | *[必須]* contactページのURL |
 | {PrivacyPageURL} | *[必須]* プライバシーポリシーページのURL |
 | {LawPageURL} | *[必須]* 特商法ページのURL |
