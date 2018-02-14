@@ -85,8 +85,8 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 
 | 変数 | 説明 |
 |-----|-----|
-| {block:Items} | 商品のループ。トップページのみ使用可。 |
-| {block:RelatedItems} | 関連商品のループ。商品ページのみ使用可。 |
+| {block:Items} | 商品のループ。トップページのみ使用可。最大24個。 |
+| {block:RelatedItems} | 関連商品のループ。商品ページのみ使用可。最大3個。 |
 | {block:AppsItemCategoryCategories} | 大カテゴリーのループ (カテゴリーAppのインストールが必要) |
 | {block:AppsItemCategoryMediumCategories} | 大カテゴリーのループの中の中カテゴリーのループ (カテゴリーAppのインストールが必要) |
 | {block:AppsItemCategoryChildCategories} | 今いるカテゴリーの子カテゴリーのループ (カテゴリーAppのインストールが必要) |
