@@ -4,6 +4,7 @@ BASE Templateのドキュメントです。BASE Templateを使うにはHTML、CS
 
 ## 更新情報
 
+- 2018/02/15 関連商品の変数を追加しました。
 - 2017/11/22 ブログ固定記事の変数を追加しました。
 - 2017/10/27 ブログ記事ページもプレビューできるようにしました。
 - 2017/10/18 ブログRSSの変数を追加しました。
@@ -84,7 +85,8 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 
 | 変数 | 説明 |
 |-----|-----|
-| {block:Items} | 商品のループ |
+| {block:Items} | 商品のループ。トップページのみ使用可。最大24個。 |
+| {block:RelatedItems} | 関連商品のループ。商品ページのみ使用可。最大3個。 |
 | {block:AppsItemCategoryCategories} | 大カテゴリーのループ (カテゴリーAppのインストールが必要) |
 | {block:AppsItemCategoryMediumCategories} | 大カテゴリーのループの中の中カテゴリーのループ (カテゴリーAppのインストールが必要) |
 | {block:AppsItemCategoryChildCategories} | 今いるカテゴリーの子カテゴリーのループ (カテゴリーAppのインストールが必要) |
@@ -204,7 +206,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {ItemPageURL} | 商品ページのURL |
 | {AboutPageURL} | aboutページのURL |
 | {BlogPageURL} | blogページのURL (Apps) |
-| {BlogFeedPageURL} | blogのRSSページのURL (Apps) |
+| {BlogFeedPageURL} | blogのRSSページのURL。独自拡張のimageが画像URL (Apps) |
 | {ContactPageURL} | *[必須]* contactページのURL |
 | {PrivacyPageURL} | *[必須]* プライバシーポリシーページのURL |
 | {LawPageURL} | *[必須]* 特商法ページのURL |
@@ -289,14 +291,23 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {ItemDetailNoBr} | 商品の説明 (特殊文字はHTML エンティティに変換される。改行はbrタグに変換されない) |
 | {ItemDigitalContent} | 商品のデジタルコンテンツのファイル名 (デジタルコンテンツAppのインストールが必要) |
 | {ItemImage[1-20]URL-origin} | 商品画像のオリジナルサイズ。商品ページのみ使用可。 `例) <img src="{ItemImage2URL-origin}">` |
-| {ItemImage[1-20]URL-76} | 商品画像の76pxサイズ。取得できなかった場合はオリジンサイズ。2~20は商品ページのみ使用可。 |
-| {ItemImage[1-20]URL-146} | 商品画像の146pxサイズ。取得できなかった場合はオリジンサイズ。2~20は商品ページのみ使用可。 |
-| {ItemImage[1-20]URL-300} | 商品画像の300pxサイズ。取得できなかった場合はオリジンサイズ。2~20は商品ページのみ使用可。 |
-| {ItemImage[1-20]URL-500} | 商品画像の500pxサイズ。取得できなかった場合はオリジンサイズ。2~20は商品ページのみ使用可。 |
-| {ItemImage[1-20]URL-640} | 商品画像の640pxサイズ。取得できなかった場合はオリジンサイズ。2~20は商品ページのみ使用可。 |
+| {ItemImage[1-20]URL-76} | 商品画像の76pxサイズ。2~20は商品ページのみ使用可。 |
+| {ItemImage[1-20]URL-146} | 商品画像の146pxサイズ。2~20は商品ページのみ使用可。 |
+| {ItemImage[1-20]URL-300} | 商品画像の300pxサイズ。2~20は商品ページのみ使用可。 |
+| {ItemImage[1-20]URL-500} | 商品画像の500pxサイズ。2~20は商品ページのみ使用可。 |
+| {ItemImage[1-20]URL-640} | 商品画像の640pxサイズ。2~20は商品ページのみ使用可。 |
 | {ItemImageCount} | 商品画像の枚数。商品ページのみ使用可。 |
 | {ItemNoImageURL} | no imageの画像 |
 | {ItemDeepLink} | 商品のディープリンク。アプリがない場合はウェブへリダイレクト。 |
+
+### 関連商品
+
+| 変数 | 説明 |
+|-----|-----|
+| {RelatedItemTitle} | 関連商品の名前 |
+| {RelatedItemPrice} | 関連商品の価格 |
+| {RelatedItemImageURL-640} | 関連商品の画像 |
+| {RelatedItemPageURL} | 関連商品のURL |
 
 ### Apps
 
