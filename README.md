@@ -173,6 +173,12 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {block:ItemImage[1-20]} | 商品画像がある。 `例) {block:ItemImage2}画像2がある{/block:ItemImage2}` |
 | {block:NoItemImage[1-20]} | 商品画像がない。 `例) {block:NotItemImage2}画像2がない{/block:NotItemImage2}` |
 
+### if 関連商品
+
+| 変数 | 説明 |
+|-----|-----|
+| {block:HasRelatedItems} | 関連商品がある |
+
 ### if Apps
 
 | 変数 | 説明 |
