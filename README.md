@@ -471,10 +471,11 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 
 Appsごとの対応方法の詳細は以下の各ページをご確認ください。
 
-- [カテゴリ管理App](apps/item_category.md)
-- [商品検索App](apps/search.md)
-- [レビューApp](apps/review.md)
-- [セールApp](apps/sale.md)
+- [BlogApp](samples/blog_app.md)
+- [カテゴリ管理App](samples/item_category_app.md)
+- [商品検索App](samples/search_app.md)
+- [レビューApp](samples/review_app.md)
+- [セールApp](samples/sale_app.md)
 
 ## お問い合わせ
 
