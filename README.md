@@ -467,15 +467,14 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 </html>
 ```
 
-## Apps別対応方法の詳細
-
-Appsごとの対応方法の詳細は以下の各ページをご確認ください。
+## サンプルコード
 
 - [BlogApp](samples/blog_app.md)
 - [カテゴリ管理App](samples/item_category_app.md)
 - [商品検索App](samples/search_app.md)
 - [レビューApp](samples/review_app.md)
 - [セールApp](samples/sale_app.md)
+- [関連商品](samples/related_item.md)
 
 ## お問い合わせ
 
