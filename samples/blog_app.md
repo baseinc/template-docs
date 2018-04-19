@@ -61,6 +61,7 @@ $(function(){
         dataType: 'xml',
     })
     .done(function(data) {
+        i = 1;
         $('item', data).each(function() {
             var link = $('link', this).text();
             var title = $('title', this).text();
@@ -68,6 +69,10 @@ $(function(){
             var blog_content = '<div><a href="' + link + '"><img src="' + image + '"><p>' + title + '</p></a></div>';
 //alert(link + ' : ' + title + ' : ' + image);
             $('#container').append(blog_content);
+            if (i >= 3) {
+                return false;
+            }
+            i++;
         });
     });
 });
