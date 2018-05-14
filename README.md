@@ -196,6 +196,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {block:AppsSearch} | 商品検索Appをインストールしている |
 | {block:AppsReview} | レビューAppをインストールしている |
 | {block:AppsSale} | セールAppをインストールしている |
+| {block:AppsCoinFunding} | ショップコインAppをインストールしている |
 
 ### BASE
 
@@ -216,6 +217,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {ContactPageURL} | *[必須]* contactページのURL |
 | {PrivacyPageURL} | *[必須]* プライバシーポリシーページのURL |
 | {LawPageURL} | *[必須]* 特商法ページのURL |
+| {CoinFundingPageURL} | ショップコインページのURL |
 | {LoadItemsPageURL} | 商品ロードページのURL。ページングのajaxで使用する。 `例) url: "{LoadItemsPageURL}" + next_page + "{LoadItemsPageURLParams}",` |
 | {LoadItemsPageURLParams} | 商品ロードページのURLのパラメーター。ページングのajaxで使用する。 `例) url: "{LoadItemsPageURL}" + next_page + "{LoadItemsPageURLParams}",` |
 | {IndexPageCategory} | トップページのカテゴリー。 `例) {block:IndexPageCategory}{IndexPageCategory}{/block:IndexPageCategory}` |
@@ -475,6 +477,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 - [レビューApp](samples/review_app.md)
 - [セールApp](samples/sale_app.md)
 - [関連商品](samples/related_item.md)
+- [ショップコインApp](samples/coin_funding.md)
 
 ## お問い合わせ
 
