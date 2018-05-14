@@ -477,7 +477,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 - [レビューApp](samples/review_app.md)
 - [セールApp](samples/sale_app.md)
 - [関連商品](samples/related_item.md)
-- [ショップコインApp](samples/coin_funding.md)
+- [ショップコインApp](samples/coin_funding_app.md)
 
 ## お問い合わせ
 
