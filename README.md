@@ -323,12 +323,10 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 |-----|-----|
 | {AppsBlogArticleTitle} | ブログ記事のタイトル |
 | {AppsBlogArticlePageURL} | ブログ記事ページのURL |
-| {AppsItemCategoryTag} | *[非推奨]* カテゴリーのタグ。大カテゴリーだけ表示される。 (カテゴリーAppのインストールが必要) |
 | {AppsItemCategoryCategoriesTag} | カテゴリーのタグ。大カテゴリーと中カテゴリーが表示される。 (カテゴリーAppのインストールが必要) |
 | {AppsI18nTag} | 言語切替のタグ (海外対応Appのインストールが必要) |
 | {AppsItemLabelTag} | 商品ラベルのタグ (ラベルAppのインストールが必要) |
 | {AppsItemCategoryCategoryName} | カテゴリーの名前 (カテゴリーAppのインストールが必要) `例) {block:AppsItemCategoryCategories}{AppsItemCategoryCategoryName}{/block:AppsItemCategoryCategories}` |
-| {AppsItemCategoryCategoryCount} | *[非推奨]* カテゴリーの商品数 (カテゴリーAppのインストールが必要) `例) {block:AppsItemCategoryCategories}{AppsItemCategoryCategoryName} ({AppsItemCategoryCategoryCount}){/block:AppsItemCategoryCategories}` |
 | {AppsItemCategoryCategoryPageURL} | カテゴリーのページのURL (カテゴリーAppのインストールが必要) `例) {block:AppsItemCategoryCategories}<a href="{AppsItemCategoryCategoryPageURL}">{AppsItemCategoryCategoryName}</a>{/block:AppsItemCategoryCategories}` |
 | {AppsItemCategoryMediumCategoryName} | 中カテゴリーの名前 (カテゴリーAppのインストールが必要) |
 | {AppsItemCategoryMediumCategoryPageURL} | 中カテゴリーのページのURL (カテゴリーAppのインストールが必要) |

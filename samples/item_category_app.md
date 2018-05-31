@@ -60,10 +60,8 @@
 ### Apps
 | 変数 | 説明 |
 |-----|-----|
-| {AppsItemCategoryTag} | *[非推奨]* カテゴリのタグ。大カテゴリだけ表示される。 (カテゴリAppのインストールが必要) |
 | {AppsItemCategoryCategoriesTag} | カテゴリのタグ。大カテゴリと中カテゴリが表示される。 (カテゴリAppのインストールが必要) |
 | {AppsItemCategoryCategoryName} | カテゴリの名前 (カテゴリAppのインストールが必要) `例) {block:AppsItemCategoryCategories}{AppsItemCategoryCategoryName}{/block:AppsItemCategoryCategories}` |
-| {AppsItemCategoryCategoryCount} | *[非推奨]* カテゴリの商品数 (カテゴリAppのインストールが必要) `例) {block:AppsItemCategoryCategories}{AppsItemCategoryCategoryName} ({AppsItemCategoryCategoryCount}){/block:AppsItemCategoryCategories}` |
 | {AppsItemCategoryCategoryPageURL} | カテゴリのページのURL (カテゴリAppのインストールが必要) `例) {block:AppsItemCategoryCategories}<a href="{AppsItemCategoryCategoryPageURL}">{AppsItemCategoryCategoryName}</a>{/block:AppsItemCategoryCategories}` |
 | {AppsItemCategoryMediumCategoryName} | 中カテゴリの名前 (カテゴリAppのインストールが必要) |
 | {AppsItemCategoryMediumCategoryPageURL} | 中カテゴリのページのURL (カテゴリAppのインストールが必要) |
