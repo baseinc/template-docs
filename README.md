@@ -260,7 +260,7 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {BlogContentsTag} | blogページのコンテンツのタグ (Apps) |
 | {ItemAttentionTag} | *[必須]* 商品ページの注意文のタグ |
 | {IllegalReportTag} | *[必須]* 商品ページの通報するのタグ |
-| {ItemSaleStatusTag} | 商品ページで、販売期間設定された商品の状態に応じて `COMING SOON` 、 `SOLD OUT` の表示をします。 |
+| {ItemSaleStatusTag} | 販売期間設定された商品の状態に応じて `COMING SOON` 、 `SOLD OUT` の表示をします。 |
 | {ItemWatingForSaleButtonTag} | 販売期間が設定されている商品に対し、商品の状態に応じて `販売開始のお知らせを希望する` `販売開始までお待ち下さい` `この商品についてお問い合わせする` のいずれかのボタンを表示します。　|
 | {AddToCartURL} | カートに入れるのURL。POSTのパラメーターが必要です。 |
 | {block:PurchaseForm} | カートに入れるform。内部に`{PurchaseButton}`が必要です。 |

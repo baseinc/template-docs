@@ -26,7 +26,7 @@
 
 | 変数 | 説明 |
 |-----|-----|
-| {ItemSaleStatusTag} | 商品ページで、販売期間設定された商品の状態に応じて `COMING SOON` の表示をします。 |
+| {ItemSaleStatusTag} | 販売期間設定された商品の状態に応じて `COMING SOON` 、 `SOLD OUT` の表示をします。 |
 
 
 ### 「カートに入れる」ボタンを表示するための新たな変数
@@ -61,35 +61,45 @@
 ## 対応が必要なページ
 
 ### トップページ（商品一覧）
-商品一覧の表示で、販売予告の商品に `COMING SOON` 、販売終了の商品に `SOLD OUT` などの表示を入れてください。
+商品一覧の表示で、販売期間指定の商品の状態に応じてステータスを表す文言を入れてください。
 
-`{ItemSaleStatusTag}` を利用すれば、 `COMING SOON` `SOLD OUT` を表示させることはできます。
+`{ItemSaleStatusTag}` を利用すれば、 `COMING SOON` `SOLD OUT` を表示させることができます。
 
 #### 例)
 ```
 {block:HasItemStock}
-
   ・・・
-
   {block:ItemEndOfSale}
     <p>{ItemSaleStatusTag}</p>
   {/block:ItemEndOfSale}
-
   ・・・
-
   {block:ItemWatingForSale}
     <p>{ItemSaleStatusTag}</p>
   {/block:ItemWatingForSale}
-
   ・・・
-
 {/block:HasItemStock}
 ```
+#### 例)
+```
+{block:HasItemStock}
+  ・・・
+  {block:ItemEndOfSale}
+    <p>販売完了</p>
+  {/block:ItemEndOfSale}
+  ・・・
+  {block:ItemWatingForSale}
+    <p>準備中</p>
+  {/block:ItemWatingForSale}
+  ・・・
+{/block:HasItemStock}
 
 
 ### 商品詳細ページ
 
-販売予告の商品に `COMING SOON` 、販売終了の商品に `SOLD OUT` などの表示を入れてください。
+販売期間設定されている商品の状態に応じてステータスを表す文言を入れてください。
+
+`{ItemSaleStatusTag}` を利用すれば、 `COMING SOON` `SOLD OUT` を表示させることができます。
+
 #### 例)
 ```
 {block:HasItemStock}
@@ -101,6 +111,18 @@
   {/block:ItemEndOfSale}
 {/block:HasItemStock}
 ```
+#### 例)
+```
+{block:HasItemStock}
+  {block:ItemWatingForSale}
+    <p>準備中</p>
+  {/block:ItemWatingForSale}
+  {block:ItemEndOfSale}
+    <p>販売終了</p>
+  {/block:ItemEndOfSale}
+{/block:HasItemStock}
+```
+
 
 販売期間の状態に応じて、「カートに入れる」ボタンのテキスト・動作が変わるように、新しい仕様のカートのタグを利用してください。
 
