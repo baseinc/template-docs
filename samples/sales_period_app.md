@@ -92,7 +92,7 @@
   {/block:ItemWatingForSale}
   ・・・
 {/block:HasItemStock}
-
+```
 
 ### 商品詳細ページ
 
