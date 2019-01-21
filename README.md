@@ -199,8 +199,8 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {block:AppsSale} | セールAppをインストールしている |
 | {block:AppsCoinFunding} | ショップコインAppをインストールしている |
 | {block:ItemWatingForSale} | 販売期間設定Appの設定で商品が販売期間前のとき |
-| {block:ItemEndOfSale} | 販売期間設定Appの設定で商品が販売期間中のとき |
-| {block:ItemNowOnSale} | 販売期間設定Appの設定で商品が販売期間終了後のとき |
+| {block:ItemNowOnSalee} | 販売期間設定Appの設定で商品が販売期間中のとき |
+| {block:ItemEndOfSal} | 販売期間設定Appの設定で商品が販売期間終了後のとき |
 
 
 ### BASE
@@ -260,8 +260,8 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {BlogContentsTag} | blogページのコンテンツのタグ (Apps) |
 | {ItemAttentionTag} | *[必須]* 商品ページの注意文のタグ |
 | {IllegalReportTag} | *[必須]* 商品ページの通報するのタグ |
-| {ItemSaleStatusTag} | 商品ページで、販売期間設定された商品の状態に応じて `COMING SOON` の表示をします。 |
-| {ItemWatingForSaleButtonTag} | カートに入れるボタンを表示します。 ボタンのテキストや動作が、販売期間設定された商品の状態に応じて自動的に変わります。 |
+| {ItemSaleStatusTag} | 商品ページで、販売期間設定された商品の状態に応じて `COMING SOON` 、 `SOLD OUT` の表示をします。 |
+| {ItemWatingForSaleButtonTag} | 販売期間が設定されている商品に対し、商品の状態に応じて `販売開始のお知らせを希望する` `販売開始までお待ち下さい` `この商品についてお問い合わせする` のいずれかのボタンを表示します。　|
 | {AddToCartURL} | カートに入れるのURL。POSTのパラメーターが必要です。 |
 | {block:PurchaseForm} | カートに入れるform。内部に`{PurchaseButton}`が必要です。 |
 | {PurchaseButton} | カートに入れるボタンを表示します。 ボタンのテキストや動作が、商品の状態（売り切れかどうか、販売期間かどうか、など）によって自動的に変わります。|

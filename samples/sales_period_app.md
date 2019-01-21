@@ -40,13 +40,7 @@
 | {block:PurchaseForm} | カートに入れるform。内部に`{PurchaseButton}`が必要です。 |
 | {PurchaseButton} | カートに入れるボタンを表示します。 ボタンのテキストや動作が、商品の状態（売り切れかどうか、販売期間かどうか、など）によって自動的に変わります。 |
 
-テーマの構造上、既存の「カートに入れる」ボタンを丸ごと入れ替えることが難しい場合は、販売期間設定時用に以下のタグを利用することもできます。
-
-| 変数 | 説明 |
-|-----|-----|
-| {ItemWatingForSaleButtonTag} | カートに入れるボタンを表示します。 ボタンのテキストや動作が、販売期間設定された商品の状態に応じて自動的に変わります。 |
-
-販売期間の状態に応じた「カートに入れる」ボタンのテキストは以下の通りとなります。
+販売期間の状態に応じたボタンのテキストは以下の通りとなります。
 
 | 販売期間の状態 | ボタンのテキスト | ボタンの動作 |
 |-----|-----|-----|
@@ -55,12 +49,21 @@
 | 販売中 | `カートに入れる` | カート画面へ遷移 |
 | 販売終了 | `この商品についてお問い合わせする` | コンタクトフォームへ遷移 |
 
+テーマの構造上、既存の「カートに入れる」ボタンを丸ごと入れ替えることが難しい場合は、販売期間設定時用に以下のタグを利用することもできます。
+
+| 変数 | 説明 |
+|-----|-----|
+| {ItemWatingForSaleButtonTag} | 販売期間が設定されている商品に対し、商品の状態に応じて `販売開始のお知らせを希望する` `販売開始までお待ち下さい` `この商品についてお問い合わせする` のいずれかのボタンを表示します。 |
+
+具体的な実装の方法は以下をご確認ください。
 
 
 ## 対応が必要なページ
 
 ### トップページ（商品一覧）
 商品一覧の表示で、販売予告の商品に `COMING SOON` 、販売終了の商品に `SOLD OUT` などの表示を入れてください。
+
+`{ItemSaleStatusTag}` を利用すれば、 `COMING SOON` `SOLD OUT` を表示させることはできます。
 
 #### 例)
 ```
@@ -69,13 +72,13 @@
   ・・・
 
   {block:ItemEndOfSale}
-    <p>SOLD OUT</p>
+    <p>{ItemSaleStatusTag}</p>
   {/block:ItemEndOfSale}
 
   ・・・
 
   {block:ItemWatingForSale}
-    <p>COMING SOON</p>
+    <p>{ItemSaleStatusTag}</p>
   {/block:ItemWatingForSale}
 
   ・・・
@@ -94,7 +97,7 @@
     <p>{ItemSaleStatusTag}</p>
   {/block:ItemWatingForSale}
   {block:ItemEndOfSale}
-    <p>SOLD OUT</p>
+    <p>{ItemSaleStatusTag}</p>
   {/block:ItemEndOfSale}
 {/block:HasItemStock}
 ```
@@ -108,6 +111,35 @@
   {PurchaseButton}
 {/block:PurchaseForm}
 ```
+
+テーマの構造上、既存の「カートに入れる」ボタンを丸ごと入れ替えることが難しい場合は、既存のカートボタンは残しつつ、販売期間設定用に以下のように書くこともできます。
+
+#### 例)
+```
+<form id="purchase_form" name="menu" action="{AddToCartURL}" method="post">
+    <!-- 販売開始前 -->
+    {block:ItemWatingForSale}
+        {ItemWatingForSaleButtonTag}
+    {/block:ItemWatingForSale}
+
+    <!-- 販売中 中身が従来の書き方 -->
+    {block:ItemNowOnSale}
+        {ItemSelectTag}
+        {block:HasItemStock}
+            <input type="submit" value="{lang:AddToCart}" class="buttonHover">
+        {/block:HasItemStock}
+        {block:NoItemStock}
+            <a href="{ContactPageURL}/items/{ItemId}" class="buttonHover buttonHover--noItem">{lang:NoItemInquiry}</a>
+        {/block:NoItemStock}
+    {/block:ItemNowOnSale}
+
+    <!-- 販売終了 -->
+    {block:ItemEndOfSale}
+        {ItemWatingForSaleButtonTag}
+    {/block:ItemEndOfSale}
+</form>
+```
+
 
 ### 販売開始のお知らせを希望するモーダル
 
