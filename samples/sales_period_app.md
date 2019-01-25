@@ -10,7 +10,7 @@
 
 販売期間が設定されると、商品のステータスは以下のように遷移します。
 
-<img src="https://raw.githubusercontent.com/baseinc/template-docs/images/sales_period_status.png" width="100%">
+<img src="https://raw.githubusercontent.com/baseinc/template-docs/images/sales_period_status.png" width="600">
 
 上記の図のように、販売期間設定された商品については、以下の3つのステータスがあります。
 
