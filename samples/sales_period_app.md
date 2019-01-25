@@ -57,8 +57,7 @@
 
 商品一覧の表示で、販売期間設定済みの商品の状態に応じてステータスを表す文言を入れてください。
 
-画面イメージ）
-*** img 入れる
+<img src="https://raw.githubusercontent.com/baseinc/template-docs/images/sales_period_top.png" width="600">
 
 ### 実装例1
 
@@ -106,9 +105,7 @@
 
 商品一覧と同様の方法で、販売期間設定の状態に応じて `COMING SOON` や `SOLD OUT` の表示をしてください。
 
-画面イメージ）
-*** img 入れる
-
+<img src="https://raw.githubusercontent.com/baseinc/template-docs/images/sales_period_item.png" width="600">
 
 ### 販売開始日時の情報
 
@@ -183,10 +180,9 @@
 
 ## 商品ページ（販売開始のお知らせを希望するモーダル）
 
-画面イメージ）
-*** img 入れる
-
 商品が販売予告ステータスの場合、「販売期間のお知らせを希望する」ボタンをクリックするとメールアドレス入力のモーダルが開きます。
+
+<img src="https://raw.githubusercontent.com/baseinc/template-docs/images/sales_period_modal.png" width="600">
 
 テーマのデザインに応じて、モーダルのスタイルを調整してください。htmlの構造は以下の通りです。
 
