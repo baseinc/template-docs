@@ -112,9 +112,14 @@
 この部分については、テーマのデザインに応じてスタイルを当ててください。htmlの構造は以下の通りです。
 
 ```
-<p class="attention salesPeriod salesPeriod--term">
-  販売期間<br>xxxx年xx月xx日 00:00 ~ xxxx年xx月xx日 00:00
-</p>
+販売前で開始日あり、終了日ありの場合
+<p class="attention salesPeriod salesPeriod--term">販売期間<br>2019年1月1日 00:00 ~ 2019年1月31日 23:59</p>
+
+販売前で開始日あり、終了日なしの場合
+<p class="attention salesPeriod salesPeriod--willStart">2019年1月1日 00:00 から販売</p>
+
+販売終了後の場合
+<p class="attention salesPeriod salesPeriod--finish">2019年1月31日 23:59 に販売終了</p>
 ```
 
 
