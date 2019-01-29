@@ -181,6 +181,28 @@
 </form>
 ```
 
+`PurchaseButton` , `ItemWatingForSaleButtonTag` が生成するボタンのパターン（ボタンテキスト、クラス）を以下にまとめます。
+
+ボタンの状態によってスタイルを調整する場合など、参考にしてください。
+
+#### PurchaseButton のパターン
+
+| ボタンのテキスト | クラス |
+|-----|-----|
+| カートに入れる | `.purchaseButton__btn` `.purchaseButton__btn--addToCart` |
+| 再入荷についてお問い合わせをする | `.purchaseButton__btn` `.purchaseButton__btn--noItem` |
+| 販売開始のお知らせを希望する | `.purchaseButton__btn` `.purchaseButton__btn--comingSoon` |
+| 販売開始までお待ち下さい | `.purchaseButton__btn` `.purchaseButton__btn--comingSoonStay` |
+| この商品についてお問い合わせする | `.purchaseButton__btn` `.purchaseButton__btn--endOfSale` |
+
+#### ItemWatingForSaleButtonTag のパターン
+
+| ボタンのテキスト | クラス |
+|-----|-----|
+| 販売開始のお知らせを希望する | `.purchaseButton__btn` `.purchaseButton__btn--comingSoon` |
+| 販売開始までお待ち下さい | `.purchaseButton__btn` `.purchaseButton__btn--comingSoonStay` |
+| この商品についてお問い合わせする | `.purchaseButton__btn` `.purchaseButton__btn--endOfSale` |
+
 
 ## 商品ページ（販売開始のお知らせを希望するモーダル）
 
