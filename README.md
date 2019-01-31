@@ -199,8 +199,8 @@ BASE Templateはテンプレート変数を使って編集します。テンプ�
 | {block:AppsSale} | セールAppをインストールしている |
 | {block:AppsCoinFunding} | ショップコインAppをインストールしている |
 | {block:ItemWatingForSale} | 販売期間設定Appの設定で商品が販売期間前のとき |
-| {block:ItemNowOnSalee} | 販売期間設定Appの設定で商品が販売期間中のとき |
-| {block:ItemEndOfSal} | 販売期間設定Appの設定で商品が販売期間終了後のとき |
+| {block:ItemNowOnSale} | 販売期間設定Appの設定で商品が販売期間中のとき |
+| {block:ItemEndOfSale} | 販売期間設定Appの設定で商品が販売期間終了後のとき |
 
 
 ### BASE
