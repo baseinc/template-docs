@@ -244,3 +244,8 @@
 </div>
 ```
 
+## テストパターン
+
+テーマ申請の際に下記のテストパターンを確認してください。
+
+<img width="1409" alt="testpattern" src="https://user-images.githubusercontent.com/38424240/52385479-20e03800-2ac5-11e9-9355-ab15e778f797.png">
