@@ -163,26 +163,24 @@
 
 ```
 <form id="purchase_form" name="menu" action="{AddToCartURL}" method="post">
-    <!-- 販売開始前 -->
-    {block:ItemWatingForSale}
-        {ItemWatingForSaleButtonTag}
-    {/block:ItemWatingForSale}
-
-    <!-- 販売中 中身が従来の書き方 -->
-    {block:ItemNowOnSale}
-        {ItemSelectTag}
-        {block:HasItemStock}
+    {block:HasItemStock}
+        <!-- 販売開始前 -->
+        {block:ItemWatingForSale}
+            {ItemWatingForSaleButtonTag}
+        {/block:ItemWatingForSale}
+        <!-- 販売中 中身が従来の書き方 -->
+        {block:ItemNowOnSale}
+            {ItemSelectTag}
             <input type="submit" value="{lang:AddToCart}" class="buttonHover">
-        {/block:HasItemStock}
-        {block:NoItemStock}
-            <a href="{ContactPageURL}/items/{ItemId}" class="buttonHover buttonHover--noItem">{lang:NoItemInquiry}</a>
-        {/block:NoItemStock}
-    {/block:ItemNowOnSale}
-
-    <!-- 販売終了 -->
-    {block:ItemEndOfSale}
-        {ItemWatingForSaleButtonTag}
-    {/block:ItemEndOfSale}
+        {/block:ItemNowOnSale}
+        <!-- 販売終了 -->
+        {block:ItemEndOfSale}
+            {ItemWatingForSaleButtonTag}
+        {/block:ItemEndOfSale}
+    {/block:HasItemStock}
+    {block:NoItemStock}
+        <a href="{ContactPageURL}/items/{ItemId}" class="buttonHover buttonHover--noItem">{lang:NoItemInquiry}</a>
+    {/block:NoItemStock}ß
 </form>
 ```
 
