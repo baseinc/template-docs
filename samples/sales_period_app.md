@@ -171,7 +171,7 @@
         <!-- 販売中 中身が従来の書き方 -->
         {block:ItemNowOnSale}
             {ItemSelectTag}
-            <input type="submit" value="{lang:AddToCart}" class="buttonHover">
+            <input type="submit" value="{lang:AddToCart}">
         {/block:ItemNowOnSale}
         <!-- 販売終了 -->
         {block:ItemEndOfSale}
@@ -179,7 +179,7 @@
         {/block:ItemEndOfSale}
     {/block:HasItemStock}
     {block:NoItemStock}
-        <a href="{ContactPageURL}/items/{ItemId}" class="buttonHover buttonHover--noItem">{lang:NoItemInquiry}</a>
+        <a href="{ContactPageURL}/items/{ItemId}">{lang:NoItemInquiry}</a>
     {/block:NoItemStock}
 </form>
 ```
