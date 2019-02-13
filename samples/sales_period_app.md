@@ -180,7 +180,7 @@
     {/block:HasItemStock}
     {block:NoItemStock}
         <a href="{ContactPageURL}/items/{ItemId}" class="buttonHover buttonHover--noItem">{lang:NoItemInquiry}</a>
-    {/block:NoItemStock}ß
+    {/block:NoItemStock}
 </form>
 ```
 
