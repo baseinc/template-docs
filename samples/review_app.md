@@ -1,32 +1,3 @@
-# レビューAppの対応
+このドキュメントは下記のページへ移動しました。
 
-商品ページにレビュー情報を表示できるAppsです。
-
-## 関連するテンプレート変数
-
-### if Apps
-
-| 変数 | 説明 |
-|-----|-----|
-| {block:AppsReview} | レビューAppsをインストールしている |
-
-### Apps
-
-| 変数 | 説明 |
-|-----|-----|
-| {AppsReviewTag} | レビューのタグ。商品ページでのみ表示される。 (レビューAppのインストールが必要) |
-
-## レビューの表示
-
-商品ページにレビューAppの変数を追加します。
-
-*例)*
-
-```
-{block:AppsReview}
-{AppsReviewTag}
-{/block:AppsReview}
-```
-
-## 動作のチェック
-- 商品ページでレビューが表示されるか
+https://docs.thebase.in/docs/template/apps/review_app

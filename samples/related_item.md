@@ -1,17 +1,3 @@
-# 関連商品の対応
+このドキュメントは下記のページへ移動しました。
 
-商品ページに関連商品を表示することができます。関連商品を表示することで回遊率が上がります。
-
-## 関連商品の表示
-
-*例)*
-
-```
-{block:HasRelatedItems}
-<div>関連商品</div>
-{block:RelatedItems}
-    <div><a href="{RelatedItemPageURL}"><img src="{RelatedItemImageURL-640}"></a></div>
-    <div>{RelatedItemTitle} / {RelatedItemPrice}<div>
-{/block:RelatedItems}
-{/block:HasRelatedItems}
-```
+https://docs.thebase.in/docs/template/syntax/related
